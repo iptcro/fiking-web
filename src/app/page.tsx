@@ -45,6 +45,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <p>Ovdje ce biti FIKING web stranica, wiii!</p>
       </main>
       <footer className={styles.footer}>
         <a
