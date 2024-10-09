@@ -1,48 +1,48 @@
 .btn {
-    padding: 3px 5px;
-    border-radius: 18px;
-    border: 2px solid;
-    font-size: 20px;
+  padding: 3px 5px;
+  border-radius: 18px;
+  border: 2px solid;
+  font-size: 20px;
 }
 
 .btn-primary {
-    background-color: var(--fiking-dark);
-    color: var(--perfect-white);
-    font-weight: bold;
-    border-color: var(--fiking-darkest);
+  background-color: var(--fiking-dark);
+  color: var(--perfect-white);
+  font-weight: bold;
+  border-color: var(--fiking-darkest);
 }
 
 .btn-secondary {
-    background-color: var(--perfect-white);
-    color: var(--fiking-dark);
-    font-weight: medium;
-    border-color: var(--fiking-dark);
+  background-color: var(--perfect-white);
+  color: var(--fiking-dark);
+  font-weight: medium;
+  border-color: var(--fiking-dark);
 }
 
 .btn-icon {
-    color: var(--fiking-light);
-    margin-left: 3px;
+  color: var(--fiking-light);
+  margin-left: 3px;
 }
 
 .nav-bar {
-    display: flex;
-    background-color: var(--perfect-white);
-    padding: 16px 16px;
+  display: flex;
+  background-color: var(--perfect-white);
+  padding: 16px 16px;
 }
 
 .nav-bar-item {
-    padding: 3px 5px;
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--fiking-dark);
-    background: none;
-    border: none;
+  padding: 3px 5px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--fiking-dark);
+  background: none;
+  border: none;
 }
 
 .nav-bar-item.accent {
-    border: 2px solid var(--fiking-darkest);
-    background-color: var(--fiking-dark);
-    border-radius: 18px;
-    color: var(--perfect-white);
+  border: 2px solid var(--fiking-darkest);
+  background-color: var(--fiking-dark);
+  border-radius: 18px;
+  color: var(--perfect-white);
 }

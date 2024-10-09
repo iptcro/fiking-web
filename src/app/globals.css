@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --fiking-light: #5FBCD3;
+  --fiking-light: #5fbcd3;
   --fiking-dark: #216778;
-  --fiking-gray: #819FAB;
-  --fiking-graydark: #4F7381;
-  --fiking-darkest: #03303B;
+  --fiking-gray: #819fab;
+  --fiking-graydark: #4f7381;
+  --fiking-darkest: #03303b;
   --perfect-white: #ffffff;
 }
 
@@ -31,7 +30,9 @@ body {
   font-size: 20px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Finlandica", sans-serif;
 }
 
