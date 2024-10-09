@@ -46,3 +46,38 @@
   border-radius: 18px;
   color: var(--perfect-white);
 }
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--fiking-light);
+  padding: 60px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+/* ICONS */
+.icon-button {
+  display: inline-flex;
+  background-color: var(--fiking-darkest);
+  padding: 8px;
+  border-radius: 100%;
+}
+
+.icon {
+  background-color: none;
+  margin: auto;
+}

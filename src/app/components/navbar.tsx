@@ -1,7 +1,7 @@
 import "./styles_comp.css";
 import * as React from "react";
 import { Button } from "@mui/base/Button";
-import FikingLogo from "./logo";
+import { FikingLogo } from "./logo";
 
 export default function Navbar() {
   return (

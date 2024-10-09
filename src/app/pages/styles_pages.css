@@ -23,7 +23,8 @@
   background-color: var(--fiking-light);
 }
 
-.hero.color h1 {
+
+.color h1, .color h2, .color h3, .color p, .color a {
   color: white;
 }
 
@@ -34,23 +35,4 @@
 
 .btn-holder * {
   margin-right: 16px;
-}
-
-/* FOOTER */
-
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-  background-color: pink;
-}
-
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
-  flex-shrink: 0;
 }

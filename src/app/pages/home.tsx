@@ -3,6 +3,8 @@ import "./styles_pages.css";
 import { ButtonPrimary, ButtonSecondary } from "../components/buttons";
 import { IconArrowUpRight } from "@tabler/icons-react";
 import Navbar from "@/app/components/navbar";
+import { FikingLogoWhite } from "../components/logo";
+import Footer from "../components/footer";
 
 export default function HomePage() {
   return (
@@ -43,7 +45,8 @@ export default function HomePage() {
           </p>
         </div>
       </div>
-      <div>
+      <Footer />
+      {/* <div>
         <ButtonPrimary>Button</ButtonPrimary>
         <ButtonPrimary icon={<IconArrowUpRight size={14} />}>
           Button
@@ -52,7 +55,7 @@ export default function HomePage() {
         <ButtonSecondary icon={<IconArrowUpRight size={14} />}>
           Button
         </ButtonSecondary>
-      </div>
+      </div> */}
     </div>
   );
 }
