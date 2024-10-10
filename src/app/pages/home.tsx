@@ -1,10 +1,9 @@
 import React from "react";
 import "./styles_pages.css";
 import { ButtonPrimary, ButtonSecondary } from "../components/buttons";
-import { IconArrowUpRight } from "@tabler/icons-react";
 import Navbar from "@/app/components/navbar";
-import { FikingLogoWhite } from "../components/logo";
 import Footer from "../components/footer";
+import ToggleCard from "../components/toggle_card";
 
 export default function HomePage() {
   return (
@@ -12,7 +11,8 @@ export default function HomePage() {
       <Navbar />
       <div className="hero">
         <h1>
-          Studiraš fiziku? <br /> Voliš natjecanja?
+          Studiraš fiziku? <br />
+          Voliš <u>natjecanja</u>?
         </h1>
         <div className="description">
           <p>
@@ -44,6 +44,17 @@ export default function HomePage() {
             pripreme. Pridruži se i postani dio natjecateljskog tima!
           </p>
         </div>
+      </div>
+      <div className="hero">
+        <h1>Još nešto te zanima?</h1>
+        <ToggleCard
+          question="What is React?"
+          answer="React is a JavaScript library for building user interfaces."
+        />
+        <ToggleCard
+          question="What is TypeScript?"
+          answer="TypeScript is a strongly typed programming language that builds on JavaScript."
+        />
       </div>
       <Footer />
       {/* <div>

@@ -47,11 +47,47 @@
   color: var(--perfect-white);
 }
 
+
+/* FAQ */
+.card {
+  border: 3px solid var(--fiking-dark);
+  border-radius: 18px;
+  box-shadow: 0px 1px 3px var(--fiking-dark);
+
+  padding: 8px 16px;
+  margin: 16px 0;
+  
+  transition: all 0.3s ease;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--off-black);
+}
+
+.card-question {
+  font-size: 22px;
+  padding: 0;
+}
+
+.toggle-button {
+  cursor: pointer;
+  padding: 0px;
+}
+
+.card-answer {
+  padding: 0;
+}
+
+
 /* FOOTER */
 
 .footer {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 85% auto;
   background-color: var(--fiking-light);
   padding: 60px;
 }
@@ -61,19 +97,27 @@
   flex-direction: row;
   gap: 16px;
   align-items: center;
+  grid-column-start: 1;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  grid-column-start: 2;
 }
 
 .social-buttons {
   display: flex;
   flex-direction: row;
-  gap: 4px;
+  gap: 6px;
 }
 
 /* ICONS */
-.icon-button {
+.social-icon-button {
   display: inline-flex;
   background-color: var(--fiking-darkest);
-  padding: 8px;
+  padding: 5px;
   border-radius: 100%;
 }
 

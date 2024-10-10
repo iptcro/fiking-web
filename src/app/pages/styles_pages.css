@@ -23,9 +23,12 @@
   background-color: var(--fiking-light);
 }
 
-
 .color h1, .color h2, .color h3, .color p, .color a {
   color: white;
+}
+
+u {
+  text-decoration-color: var(--fiking-dark);
 }
 
 .description {

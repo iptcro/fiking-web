@@ -43,6 +43,7 @@ interface IconButtonProps {
   bgColor?: string;
   hoverColor?: string;
   ariaLabel?: string;
+  className?: string;
 }
 
 export const IconButton: React.FC<IconButtonProps> = ({
@@ -53,17 +54,17 @@ export const IconButton: React.FC<IconButtonProps> = ({
   bgColor = "var(--fiking-darkest)",
   hoverColor = "#e0e0e0",
   ariaLabel = "Social media icon button",
+  className="social-icon-button",
 }) => {
   return (
-      <a
-            href={url}
-            className="icon-button"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={ariaLabel}
-          >
-            <Icon size={size} stroke={2} color={color} className="icon" />
-          </a>
-    
+    <a
+      href={url}
+      className={className}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={ariaLabel}
+    >
+      <Icon size={size} stroke={2} color={color} className="icon" />
+    </a>
   );
 };

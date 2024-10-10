@@ -9,6 +9,7 @@
   --fiking-graydark: #4f7381;
   --fiking-darkest: #03303b;
   --perfect-white: #ffffff;
+  --off-black: #1E1E1E;
 }
 
 @media (prefers-color-scheme: dark) {
