@@ -1,5 +1,5 @@
-import "./styles_comp.css";
 import * as React from "react";
+import "./styles_comp.css";
 import { Button } from "@mui/base/Button";
 import { FikingLogo } from "./logo";
 
@@ -15,7 +15,9 @@ export default function Navbar() {
         <Button className="nav-bar-item">O nama</Button>
         <Button className="nav-bar-item">Raspored</Button>
         <Button className="nav-bar-item">Prošla natjecanja</Button>
-        <Button className="nav-bar-item accent">Javi nam se!</Button>
+        <Button className="nav-bar-item accent">
+          Javi nam se!
+        </Button>
       </div>
     </div>
   );

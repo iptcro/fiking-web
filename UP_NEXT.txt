@@ -6,3 +6,8 @@ TO DO:
 - header - mozda tipa Fiking | IPT Croatia
 
 - ove komponente s ikonicama nisu dobro odrađene
+
+
+Mobilna verzija
+- drugaciji main menu?
+- smanjena slova za headinge

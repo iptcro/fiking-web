@@ -3,6 +3,7 @@
   border-radius: 18px;
   border: 2px solid;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -12,11 +13,21 @@
   border-color: var(--fiking-darkest);
 }
 
+.btn-primary:hover {
+  background-color: var(--perfect-white);
+  color: var(--fiking-darkest);
+}
+
 .btn-secondary {
   background-color: var(--perfect-white);
   color: var(--fiking-dark);
   font-weight: medium;
   border-color: var(--fiking-dark);
+}
+
+.btn-secondary:hover {
+  color: var(--fiking-darkest);
+  font-weight: bold;
 }
 
 .btn-icon {
@@ -38,6 +49,7 @@
   color: var(--fiking-dark);
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .nav-bar-item.accent {
@@ -47,41 +59,14 @@
   color: var(--perfect-white);
 }
 
-
-/* FAQ */
-.card {
-  border: 3px solid var(--fiking-dark);
-  border-radius: 18px;
-  box-shadow: 0px 1px 3px var(--fiking-dark);
-
-  padding: 8px 16px;
-  margin: 16px 0;
-  
-  transition: all 0.3s ease;
+.nav-bar-item:hover {
+  color: var(--fiking-darkest);
 }
 
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  color: var(--off-black);
+.nav-bar-item.accent:hover {
+  color: var(--fiking-darkest);
+  background-color: var(--perfect-white);
 }
-
-.card-question {
-  font-size: 22px;
-  padding: 0;
-}
-
-.toggle-button {
-  cursor: pointer;
-  padding: 0px;
-}
-
-.card-answer {
-  padding: 0;
-}
-
 
 /* FOOTER */
 
@@ -113,7 +98,6 @@
   gap: 6px;
 }
 
-/* ICONS */
 .social-icon-button {
   display: inline-flex;
   background-color: var(--fiking-darkest);
@@ -121,7 +105,45 @@
   border-radius: 100%;
 }
 
-.icon {
+/* ICONS */
+
+.static-icon {
   background-color: none;
   margin: auto;
+}
+
+.static-icon:hover {
+  stroke: var(--fiking-dark);
+}
+
+.icon-holder-btn {
+  display: flex;
+  padding: 0;
+}
+
+/* FAQ */
+
+.card {
+  padding: 0px 30px;
+
+  border-radius: 6px;
+  border: 3px solid var(--fiking-dark);
+  box-shadow: 0px 1px 3px var(--fiking-dark);
+}
+
+.card * {
+  padding: 0;
+}
+
+.card-header {
+  padding: 0;
+}
+
+.card-question {
+  font-size: 22px;
+  padding: 0;
+}
+
+.card-answer p {
+  padding-bottom: 16px;
 }

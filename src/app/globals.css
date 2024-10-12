@@ -56,6 +56,14 @@ a {
   font-weight: bold;
 }
 
+u {
+  text-decoration-color: var(--fiking-dark);
+}
+
+.color {
+  color: var(--perfect-white);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

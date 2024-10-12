@@ -1,20 +1,21 @@
 import React from "react";
-import "./styles_pages.css";
+import spages from "./styles_pages.module.css";
 import { ButtonPrimary, ButtonSecondary } from "../components/buttons";
 import Navbar from "@/app/components/navbar";
 import Footer from "../components/footer";
-import ToggleCard from "../components/toggle_card";
+import FAQ from "../components/faq";
+import classNames from "classnames";
 
 export default function HomePage() {
   return (
-    <div className="page">
+    <div className={spages["page"]}>
       <Navbar />
-      <div className="hero">
+      <div className={spages["hero"]}>
         <h1>
           Studiraš fiziku? <br />
           Voliš <u>natjecanja</u>?
         </h1>
-        <div className="description">
+        <div className={spages["description"]}>
           <p>
             IPT je međunarodno studentsko natjecanje u kojem timovi rješavaju
             otvorene probleme u fizici. Nakon nekoliko mjeseci rada, sudionici
@@ -22,17 +23,18 @@ export default function HomePage() {
             tijekom petodnevnog turnira.
           </p>
         </div>
-        <div className="btn-holder">
+
+        <div className={spages["btn-holder"]}>
           <ButtonPrimary>Uključi se!</ButtonPrimary>
           <ButtonSecondary>Što je IPT?</ButtonSecondary>
         </div>
       </div>
-      <div className="hero color">
+      <div className={classNames(spages["hero"], spages["color"])}>
         <h1>Colored h1</h1>
       </div>
-      <div className="hero">
+      <div className={spages["hero"]}>
         <h1>Udruga Fiking</h1>
-        <div className="description">
+        <div className={spages["description"]}>
           <p>
             Udruga Fiking osnovana je s ciljem pripreme hrvatskih studenata za
             sudjelovanje na međunarodnom turniru fizičara, IPT-ju. Udrugu vode
@@ -45,16 +47,9 @@ export default function HomePage() {
           </p>
         </div>
       </div>
-      <div className="hero">
+      <div className={spages["hero"]}>
         <h1>Još nešto te zanima?</h1>
-        <ToggleCard
-          question="What is React?"
-          answer="React is a JavaScript library for building user interfaces."
-        />
-        <ToggleCard
-          question="What is TypeScript?"
-          answer="TypeScript is a strongly typed programming language that builds on JavaScript."
-        />
+        <FAQ />
       </div>
       <Footer />
       {/* <div>

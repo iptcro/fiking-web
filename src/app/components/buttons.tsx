@@ -2,6 +2,7 @@ import "./styles_comp.css";
 import * as React from "react";
 import { Button } from "@mui/base/Button";
 import { TablerIcon } from "@tabler/icons-react";
+import { StaticIcon } from "./icon";
 
 export const ButtonPrimary = ({
   children,
@@ -18,6 +19,8 @@ export const ButtonPrimary = ({
   );
 };
 
+// TODO ovo vjj ne trebaju bit dvije razlicite komp nego jedna s parametrom
+
 export const ButtonSecondary = ({
   children,
   icon,
@@ -33,38 +36,40 @@ export const ButtonSecondary = ({
   );
 };
 
-// ICON BUTTONS (for social media)
-
 interface IconButtonProps {
   icon: TablerIcon;
-  url: string;
-  size?: number;
-  color?: string;
-  bgColor?: string;
-  hoverColor?: string;
-  ariaLabel?: string;
-  className?: string;
+  url?: string;
+  iconSize?: number;
+  iconClassName?: string;
 }
 
 export const IconButton: React.FC<IconButtonProps> = ({
   icon: Icon,
-  url,
-  size = 24,
-  color = "var(--perfect-white)",
-  bgColor = "var(--fiking-darkest)",
-  hoverColor = "#e0e0e0",
-  ariaLabel = "Social media icon button",
-  className="social-icon-button",
+  url = "",
+  iconSize = 32,
+  iconClassName = "",
+}) => {
+  return (
+    <div className="icon-holder-btn">
+      <StaticIcon icon={Icon} size={iconSize} className={iconClassName} />
+    </div>
+  );
+};
+
+export const IconLink: React.FC<IconButtonProps> = ({
+  icon: Icon,
+  url = "",
+  iconSize = 32,
+  iconClassName = "social-icon-button",
 }) => {
   return (
     <a
+      className="icon-holder-btn"
       href={url}
-      className={className}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={ariaLabel}
     >
-      <Icon size={size} stroke={2} color={color} className="icon" />
+      <StaticIcon icon={Icon} size={iconSize} className={iconClassName} />
     </a>
   );
 };
