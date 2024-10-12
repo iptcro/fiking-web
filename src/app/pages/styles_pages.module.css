@@ -12,7 +12,10 @@
 
 /* SECTIONS */
 .hero {
-  padding: 64px 100px;
+  padding: 64px 12%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .hero * {
@@ -27,11 +30,58 @@
   color: white;
 }
 
+.hero-box {
+  border: 2px solid var(--fiking-dark);
+  border-radius: 18px;
+  padding: 32px;
+  align-items: baseline;
+  max-width: 700px;
+}
+
+.hero-box h2 {
+  color: var(--fiking-darkest);
+}
+
+.hero-box h3 {
+  color: var(--fiking-light);
+}
+
+.hero-box p {
+  text-align: justify;
+}
+
+.hero-box.accent, .hero-box.accent h2{
+  background-color: var(--fiking-light);
+  color: var(--perfect-white);
+}
+
 .description {
   max-width: 740px;
   text-align: justify;
 }
 
+.icon-description {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.btn-holder {
+  display: flex;
+  flex-direction: row;
+}
+
 .btn-holder * {
   margin-right: 16px;
+}
+
+.big-logo-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.big-logo {
+  height: 400px;
 }

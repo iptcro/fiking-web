@@ -4,6 +4,14 @@
   border: 2px solid;
   font-size: 20px;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.btn * {
+  padding: 0;
+  margin: 0;
 }
 
 .btn-primary {
@@ -110,10 +118,6 @@
 .static-icon {
   background-color: none;
   margin: auto;
-}
-
-.static-icon:hover {
-  stroke: var(--fiking-dark);
 }
 
 .icon-holder-btn {

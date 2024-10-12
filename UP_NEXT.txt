@@ -1,11 +1,14 @@
 TO DO:
-- aktivacija gumbiju
-- glavni callout za javljanje i ostatak sadržaja
 - responzivnost??
 - trakica na  kojoj pise da je web jos u dev fazi
 - header - mozda tipa Fiking | IPT Croatia
+- FAQ dodati sadržaj
 
-- ove komponente s ikonicama nisu dobro odrađene
+FIXEVI
+- gumbi s ikonicama, općenito trebaju li nam 2 komponente za gumbe?
+- homepage, neke stvari možda pretvoriti u komponente
+- još uvijek svi gumbi ne rade ono što želimo
+- veličine fontova možda u neke varijable ??
 
 
 Mobilna verzija
