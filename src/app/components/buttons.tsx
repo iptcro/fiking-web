@@ -45,7 +45,6 @@ interface IconButtonProps {
 
 export const IconButton: React.FC<IconButtonProps> = ({
   icon: Icon,
-  url = "",
   iconSize = 32,
   iconClassName = "",
 }) => {
