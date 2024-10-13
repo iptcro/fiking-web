@@ -1,8 +1,8 @@
-import "./styles_comp.css";
+import "@/app/styles/styles_comp.css";
 import * as React from "react";
 import { Button } from "@mui/base/Button";
 import { TablerIcon } from "@tabler/icons-react";
-import { StaticIcon } from "./icon";
+import StaticIcon from "./Icon";
 
 export const ButtonPrimary = ({
   children,

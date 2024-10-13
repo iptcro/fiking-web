@@ -1,7 +1,7 @@
 import React from "react";
-import "./styles_comp.css";
+import "@/app/styles/styles_comp.css";
 import { IconSchool, IconCalendarMonth, IconMapPin, IconTestPipe  } from "@tabler/icons-react";
-import { StaticIcon  } from "./icon";
+import { StaticIcon  } from "./Icon";
 
 const key_info = [
   {

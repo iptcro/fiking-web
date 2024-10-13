@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles_comp.css";
+import "@/app/styles/styles_comp.css";
 import { IconChevronDown } from "@tabler/icons-react";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 

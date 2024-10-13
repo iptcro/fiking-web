@@ -1,11 +1,11 @@
 import React from "react";
-import spages from "./styles_pages.module.css";
+import spages from "@/app/styles/styles_pages.module.css";
 import { ButtonPrimary, ButtonSecondary } from "../components/buttons";
 import Navbar from "@/app/components/navbar";
 import Footer from "../components/footer";
 import FAQ from "../components/faq";
 import classNames from "classnames";
-import { StaticIcon } from "../components/icon";
+import { StaticIcon } from "../components/Icon";
 import {
   IconUsers,
   IconAtom,

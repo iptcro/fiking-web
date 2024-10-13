@@ -1,7 +1,7 @@
 import { IconBrandLinkedin, IconBrandInstagram, IconBrandFacebook, IconBrandDiscord } from "@tabler/icons-react";
 import { IconLink } from "./buttons";
 import { FikingLogoWhite } from "./logo";
-import "./styles_comp.css";
+import "@/app/styles/styles_comp.css";
 
 export default function Footer() {
   return (

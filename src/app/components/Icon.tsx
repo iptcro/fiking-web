@@ -1,5 +1,5 @@
 import { TablerIcon } from "@tabler/icons-react";
-import "./styles_comp.css";
+import "@/app/styles/styles_comp.css";
 
 interface StaticIconProps {
   icon: TablerIcon;
@@ -23,3 +23,5 @@ export const StaticIcon: React.FC<StaticIconProps> = ({
     />
   );
 };
+
+export default StaticIcon;

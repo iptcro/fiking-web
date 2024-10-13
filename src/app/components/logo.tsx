@@ -1,5 +1,7 @@
 import React from "react";
 
+// TODO: ovdje importati css i globalne boje
+
 export const FikingLogo: React.FC = () => {
   return (
     <svg
