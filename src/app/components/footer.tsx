@@ -13,7 +13,7 @@ export default function Footer() {
         <div>
           <h2 className="color">Studentska udruga Fiking</h2>
           <p>
-            Ovdje ide neki opisić ispod imena udruge
+            Javi se i postani dio natjecateljskog tima!
           </p>
         </div>
       </div>

@@ -14,3 +14,8 @@ FIXEVI
 Mobilna verzija
 - drugaciji main menu?
 - smanjena slova za headinge
+
+kapica: studentsko natjecanje
+kalendarcic: 7.-13. travnja
+lokacija: Varšava, Poljska
+atomcic: stem

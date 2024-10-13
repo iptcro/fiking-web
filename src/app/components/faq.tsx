@@ -5,13 +5,17 @@ import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 
 const faq_data = [
   {
-    question: "Mogu li se prijaviti ako ...",
-    answer: "Answer to 1 is that one is the answer!",
+    question: "Prva sam godina studija fizike. Imam li dovoljno znanja za ovo natjecanje?",
+    answer: "Studenti prve godine tek kreću s općim fizikama i činjenica je da ćeš vjerojatno imati poteškoća s čitanjem članaka i rješavanjem problema. Ipak, svakako možeš sudjelovati u rješavanju problema jer je tu i puno provođenja eksperimenata, analize i sl. Možeš iskoristiti ovu priliku za učenje od starijih studenata te stjecanje vrijednog iskustva, a onda se na višim godinama kvalificirati u natjecateljski tim.",
   },
   {
-    question: "Question 2",
-    answer: "Again, 2 is now the answer",
+    question: "Ne studiram fiziku, ali bavim se programiranjem, matematikom i sl. Mogu li svejedno sudjelovati?",
+    answer: "Dapače! Tražimo ljude koji znaju raditi simulacije eksperimenata, ljude koji su dobri s matematikom i analizom podataka, ljude koji su dobri s elektronikom i sl., svaka vještina je dobrodošla!",
   },
+  {
+    question: "Što ako nisam iz Zagreba?",
+    answer: ""
+  }
 ];
 
 export default function FAQ() {
@@ -29,10 +33,10 @@ export default function FAQ() {
               />
             }
           >
-            <h3 className="card-question">{event.question}</h3>
+            <h3 className="card-question" style={{color: "black"}}>{event.question}</h3>
           </AccordionSummary>
           <AccordionDetails className="card-answer">
-            <p>{event.answer}</p>
+            <p style={{color: "black"}}>{event.answer}</p>
           </AccordionDetails>
         </Accordion>
       ))}

@@ -12,13 +12,17 @@ import {
   IconTrophy,
   IconArrowUpRight,
 } from "@tabler/icons-react";
+import KeyInfo from "../components/key_info";
 
 export default function HomePage() {
   return (
     <div className={spages["page"]}>
       <Navbar />
 
-      <div className={spages["hero"]}>
+      <div
+        className={spages["hero"]}
+        style={{ display: "flex", justifyContent: "space-between" }}
+      >
         <div>
           <h1>
             Studiraš fiziku? <br />
@@ -47,13 +51,20 @@ export default function HomePage() {
       </div>
 
       <div className={classNames(spages["hero"], spages["color"])}>
-        <h3>key info!!</h3>
+        <KeyInfo />
       </div>
 
-      <div className={spages["hero"]}>
+      <div
+        className={spages["hero"]}
+        style={{
+          display: "grid",
+          gridTemplateColumns: "49% 49%",
+          columnGap: "2%",
+        }}
+      >
         <div>
           {/* Udruga Fiking */}
-          <div className={spages["hero-box"]}> 
+          <div className={spages["hero-box"]}>
             <h2>Udruga Fiking</h2>
             <div className={spages["description"]}>
               <p>
@@ -79,7 +90,7 @@ export default function HomePage() {
             <img
               src={"/media/group_photo.jpg"}
               style={{
-                width: "700px",
+                width: "100%",
                 borderRadius: "18px",
               }}
             />
@@ -87,24 +98,25 @@ export default function HomePage() {
 
           {/* How to join */}
           <div className={classNames(spages["hero-box"], spages["accent"])}>
-            <h2>Kako sudjelovati</h2>
-            <ol>
-              <li>Odluči da želiš :)</li>
-              <li>
-                Pridruži se na Discord server udruge Fiking i pokaži dobru
-                volju.
-              </li>
-            </ol>
-            <div style={{ display: "flex", gap: "8px" }}>
+            <h2>Kako sudjelovati?</h2>
+            <div style={{fontWeight: "bold"}}>
+              <p>1. Odluči da želiš :)</p>
+              <p>2. Pridruži se na Discord server udruge Fiking i pokaži dobru
+              volju.</p>
+            </div>
+            
+            <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
               <h2>To je to!</h2>
-              <ButtonPrimary>
-                Uključi se{" "}
-                <StaticIcon
-                  icon={IconArrowUpRight}
-                  size={24}
-                  color={"var(--fiking-light)"}
-                />
-              </ButtonPrimary>
+              <div>
+                <ButtonPrimary>
+                  Uključi se{" "}
+                  <StaticIcon
+                    icon={IconArrowUpRight}
+                    size={24}
+                    color={"var(--fiking-light)"}
+                  />
+                </ButtonPrimary>
+              </div>
             </div>
           </div>
         </div>
@@ -112,7 +124,7 @@ export default function HomePage() {
         <div>
           {/* IPT? */}
           <div className={spages["hero-box"]}>
-            <h2>International Physicists’ Tournament (IPT)?</h2> 
+            <h2>International Physicists’ Tournament (IPT)?</h2>
             <div className={spages["icon-description"]}>
               <div>
                 <StaticIcon
@@ -182,10 +194,9 @@ export default function HomePage() {
             </ButtonSecondary>
           </div>
         </div>
-
       </div>
 
-      <div className={spages["hero"]}>
+      <div className={classNames(spages["hero"], spages["color"])}>
         <div>
           <h1>Još nešto te zanima?</h1>
           <FAQ />

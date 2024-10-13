@@ -151,3 +151,19 @@
 .card-answer p {
   padding-bottom: 16px;
 }
+
+/* KEY INFO */
+.key-info-box {
+  padding: 0;
+  /* border: 2px solid pink; */
+  display: flex;
+  align-items: center;
+}
+
+.key-info-box * {
+  padding: 0;
+}
+
+.key-info-box h2 {
+  padding-left: 10px;
+}
