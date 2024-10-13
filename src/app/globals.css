@@ -10,18 +10,6 @@
   --fiking-darkest: #03303b;
   --perfect-white: #ffffff;
   --off-black: #1E1E1E;
-
-  /* --fiking-light: #0077B6;
-  --fiking-dark: #9E0047;
-  --fiking-gray: #819fab;
-  --fiking-graydark: #4f7381;
-  --fiking-darkest: #023E8A; */
-
-  /* --fiking-light: #007EA7;
-  --fiking-dark: #003459;
-  --fiking-gray: #819fab;
-  --fiking-graydark: #4f7381;
-  --fiking-darkest: #00171F; */
 }
 
 @media (prefers-color-scheme: dark) {
