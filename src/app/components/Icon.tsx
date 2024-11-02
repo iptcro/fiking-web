@@ -1,5 +1,6 @@
 import { TablerIcon } from "@tabler/icons-react";
-import "@/app/styles/styles_comp.css";
+// import "@/app/styles/styles_comp.css";
+import styles from "@/app/styles/icon_styles.module.css";
 
 interface StaticIconProps {
   icon: TablerIcon;
@@ -19,7 +20,7 @@ export const StaticIcon: React.FC<StaticIconProps> = ({
       size={size}
       stroke={2}
       color={color}
-      className={"static-icon " + className}
+      className={styles["static-icon"] + className}
     />
   );
 };

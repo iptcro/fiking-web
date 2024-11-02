@@ -12,11 +12,15 @@
 
 /* SECTIONS */
 .hero {
-  padding: 64px 12%;
+  padding: 64px 10%;
 }
 
 .hero * {
   padding: 8px 0;
+}
+
+.info-holder {
+  margin: 0 auto;
 }
 
 .hero.color {
@@ -52,8 +56,13 @@
   color: var(--perfect-white);
 }
 
+.columns {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
 .description {
-  max-width: 740px;
+  max-width: max-content;
   text-align: justify;
 }
 
@@ -66,6 +75,7 @@
 .btn-holder {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .btn-holder * {
@@ -73,12 +83,43 @@
 }
 
 .big-logo-holder {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   padding-right: 30px;
 }
 
 .big-logo {
-  height: 400px;
+  height: 13rem;
 }
+
+/* Zmall desktop / Tablet*/
+@media only screen and (min-width: 768px) {
+  .big-logo-holder {
+    display: flex;
+  }
+  .btn-holder {
+    justify-content: start;
+  }
+  .columns {
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+  }
+  .description {
+    max-width: 400px;
+  }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding: 64px 12%;
+  }
+  .big-logo {
+    height: 20rem;
+  }
+  .description {
+    max-width: 600px;
+  }
+}
+

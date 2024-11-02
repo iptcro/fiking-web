@@ -1,0 +1,44 @@
+/* KEY INFO */
+.key-info-box {
+    padding: 0;
+    display: none;
+    align-items: center;
+  }
+  
+.key-info-box * {
+    padding: 0;
+}
+
+.key-info-box h2 {
+    padding-left: 10px;
+}
+
+.key-info-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.key-info-carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
+
+/* Zmall desktop / tablet */
+@media only screen and (min-width: 768px) {
+    .key-info-box {
+        display: flex;
+    }
+    .key-info-carousel {
+        display: none;
+    }
+  }
+  
+
+
+

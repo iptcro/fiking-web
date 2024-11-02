@@ -43,17 +43,17 @@ interface IconButtonProps {
   iconClassName?: string;
 }
 
-export const IconButton: React.FC<IconButtonProps> = ({
-  icon: Icon,
-  iconSize = 32,
-  iconClassName = "",
-}) => {
-  return (
-    <div className="icon-holder-btn">
-      <StaticIcon icon={Icon} size={iconSize} className={iconClassName} />
-    </div>
-  );
-};
+// export const IconButton: React.FC<IconButtonProps> = ({
+//   icon: Icon,
+//   iconSize = 32,
+//   iconClassName = "",
+// }) => {
+//   return (
+//     <div className="icon-holder-btn">
+//       <StaticIcon icon={Icon} size={iconSize} className={iconClassName} />
+//     </div>
+//   );
+// };
 
 export const IconLink: React.FC<IconButtonProps> = ({
   icon: Icon,

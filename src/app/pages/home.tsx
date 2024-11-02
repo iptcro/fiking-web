@@ -23,7 +23,7 @@ export default function HomePage() {
         className={spages["hero"]}
         style={{ display: "flex", justifyContent: "space-between" }}
       >
-        <div>
+        <div className={spages["info-holder"]}>
           <h1>
             Studiraš fiziku? <br />
             Voliš <u>natjecanja</u>?
@@ -55,12 +55,7 @@ export default function HomePage() {
       </div>
 
       <div
-        className={spages["hero"]}
-        style={{
-          display: "grid",
-          gridTemplateColumns: "49% 49%",
-          columnGap: "2%",
-        }}
+        className={classNames(spages["hero"], spages["columns"])}
       >
         <div>
           {/* Udruga Fiking */}

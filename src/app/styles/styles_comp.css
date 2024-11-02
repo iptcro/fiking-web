@@ -43,6 +43,10 @@
   margin-left: 3px;
 }
 
+.top-bar {
+  display: flex;
+}
+
 .nav-bar {
   display: flex;
   background-color: var(--perfect-white);
@@ -52,7 +56,10 @@
 .nav-bar-item {
   padding: 3px 5px;
   margin-left: 20px;
-  font-size: 20px;
+
+  display: none;
+  
+  font-size: 1.2rem;
   font-weight: bold;
   color: var(--fiking-dark);
   background: none;
@@ -76,13 +83,24 @@
   background-color: var(--perfect-white);
 }
 
+.nav-menu-button {
+  background-color: var(--fiking-dark);
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
 /* FOOTER */
 
 .footer {
-  display: grid;
-  grid-template-columns: 85% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding-bottom: 2rem;
   background-color: var(--fiking-light);
-  padding: 60px;
+  
 }
 
 .footer-info {
@@ -115,11 +133,6 @@
 
 /* ICONS */
 
-.static-icon {
-  background-color: none;
-  margin: auto;
-}
-
 .icon-holder-btn {
   display: flex;
   padding: 0;
@@ -144,26 +157,25 @@
 }
 
 .card-question {
-  font-size: 22px;
+  font-size: 1.2rem;
   padding: 0;
 }
 
 .card-answer p {
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
-/* KEY INFO */
-.key-info-box {
-  padding: 0;
-  /* border: 2px solid pink; */
-  display: flex;
-  align-items: center;
-}
-
-.key-info-box * {
-  padding: 0;
-}
-
-.key-info-box h2 {
-  padding-left: 10px;
+/* Zmall desktop / Tablet*/
+@media only screen and (min-width: 768px) {
+  .nav-menu-button {
+    visibility: hidden;
+  }
+  .nav-bar-item  {
+    display: inline;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 85% auto;
+    padding: 60px;
+  }
 }
