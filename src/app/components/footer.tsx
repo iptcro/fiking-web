@@ -8,7 +8,7 @@ export default function Footer() {
     <div className="footer color">
       <div className="footer-info">
         <a>
-          <FikingLogoWhite />
+          <FikingLogoWhite width={50}/>
         </a>
         <div>
           <h2 className="color">Studentska udruga Fiking</h2>

@@ -2,6 +2,10 @@ import React from "react";
 
 // TODO: ovdje importati css i globalne boje
 
+interface FikingLogoProps {
+  width?: number; // optional width prop
+}
+
 export const FikingLogo: React.FC = () => {
   return (
     <svg
@@ -39,11 +43,12 @@ export const FikingLogo: React.FC = () => {
   );
 };
 
-export const FikingLogoWhite: React.FC = () => {
+export const FikingLogoWhite: React.FC<FikingLogoProps> = ({ width = 72 }) => {
+  const height = (width / 72) * 67;
   return (
     <svg
-      width="72"
-      height="67"
+      width={width}
+      height={height}
       viewBox="0 0 72 67"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

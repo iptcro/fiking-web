@@ -18,7 +18,6 @@ export default function HomePage() {
   return (
     <div className={spages["page"]}>
       <Navbar />
-
       <div
         className={spages["hero"]}
         style={{ display: "flex", justifyContent: "space-between" }}
@@ -54,9 +53,7 @@ export default function HomePage() {
         <KeyInfo />
       </div>
 
-      <div
-        className={classNames(spages["hero"], spages["columns"])}
-      >
+      <div className={classNames(spages["hero"], spages["columns"])}>
         <div>
           {/* Udruga Fiking */}
           <div className={spages["hero-box"]}>
@@ -94,12 +91,14 @@ export default function HomePage() {
           {/* How to join */}
           <div className={classNames(spages["hero-box"], spages["accent"])}>
             <h2>Kako sudjelovati?</h2>
-            <div style={{fontWeight: "bold"}}>
+            <div style={{ fontWeight: "bold" }}>
               <p>1. Odluči da želiš :)</p>
-              <p>2. Pridruži se na Discord server udruge Fiking i pokaži dobru
-              volju.</p>
+              <p>
+                2. Pridruži se na Discord server udruge Fiking i pokaži dobru
+                volju.
+              </p>
             </div>
-            
+
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
               <h2>To je to!</h2>
               <div>
@@ -121,12 +120,8 @@ export default function HomePage() {
           <div className={spages["hero-box"]}>
             <h2>International Physicists’ Tournament (IPT)?</h2>
             <div className={spages["icon-description"]}>
-              <div>
-                <StaticIcon
-                  icon={IconUsers}
-                  size={100}
-                  color="var(--fiking-light)"
-                />
+              <div className={spages["ipt-icon-holder"]}>
+                <IconUsers className={spages["ipt-icon"]} />
               </div>
               <div>
                 <h3>Timsko natjecanje</h3>
@@ -140,12 +135,8 @@ export default function HomePage() {
             </div>
 
             <div className={spages["icon-description"]}>
-              <div>
-                <StaticIcon
-                  icon={IconAtom}
-                  size={100}
-                  color="var(--fiking-light)"
-                />
+              <div className={spages["ipt-icon-holder"]}>
+                <IconAtom className={spages["ipt-icon"]} />
               </div>
               <div>
                 <h3>Otvoreni problemi</h3>
@@ -159,12 +150,8 @@ export default function HomePage() {
             </div>
 
             <div className={spages["icon-description"]}>
-              <div>
-                <StaticIcon
-                  icon={IconTrophy}
-                  size={100}
-                  color="var(--fiking-light)"
-                />
+              <div className={spages["ipt-icon-holder"]}>
+                <IconTrophy className={spages["ipt-icon"]} />
               </div>
               <div>
                 <h3>Fizikalne borbe</h3>

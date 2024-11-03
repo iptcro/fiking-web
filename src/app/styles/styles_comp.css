@@ -98,7 +98,8 @@
   flex-direction: column;
   align-items: center;
   row-gap: 1rem;
-  padding-bottom: 2rem;
+  padding: 1.2rem;
+  padding-top: 0;
   background-color: var(--fiking-light);
   
 }
@@ -141,7 +142,7 @@
 /* FAQ */
 
 .card {
-  padding: 0px 30px;
+  padding: 0px 1rem;
 
   border-radius: 6px;
   border: 3px solid var(--fiking-dark);
@@ -157,12 +158,14 @@
 }
 
 .card-question {
-  font-size: 1.2rem;
-  padding: 0;
+  font-size: 1rem;
+  padding: 0.1rem;
 }
 
 .card-answer p {
+  font-size: 1rem;
   padding-bottom: 1rem;
+  text-align: justify;
 }
 
 /* Zmall desktop / Tablet*/
@@ -177,5 +180,11 @@
     display: grid;
     grid-template-columns: 85% auto;
     padding: 60px;
+  }
+  .card {
+    padding: 0px 2rem;
+  }
+  .card-question {
+    font-size: 1.2rem;
   }
 }

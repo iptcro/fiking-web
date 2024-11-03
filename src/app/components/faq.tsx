@@ -12,10 +12,10 @@ const faq_data = [
     question: "Ne studiram fiziku, ali bavim se programiranjem, matematikom i sl. Mogu li svejedno sudjelovati?",
     answer: "Dapače! Tražimo ljude koji znaju raditi simulacije eksperimenata, ljude koji su dobri s matematikom i analizom podataka, ljude koji su dobri s elektronikom i sl., svaka vještina je dobrodošla!",
   },
-  {
-    question: "Što ako nisam iz Zagreba?",
-    answer: ""
-  }
+  // {
+  //   question: "Što ako nisam iz Zagreba?",
+  //   answer: ""
+  // }
 ];
 
 export default function FAQ() {
