@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Fiking",
-  description: "Student organsation Fiking",
+  title: "IPT Hrvatska | Fiking",
+  description: "Studentska udruga Fiking",
 };
 
 export default function RootLayout({
@@ -25,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" type="image/x-icon" href="/media/logo/FikingLogo.svg" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>

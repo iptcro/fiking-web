@@ -1,4 +1,4 @@
-import { IconBrandLinkedin, IconBrandInstagram, IconBrandFacebook, IconBrandDiscord } from "@tabler/icons-react";
+import { IconBrandLinkedin, IconBrandInstagram, IconBrandFacebook, IconBrandDiscord, IconMail } from "@tabler/icons-react";
 import { IconLink } from "./buttons";
 import { FikingLogoWhite } from "./logo";
 import "@/app/styles/styles_comp.css";
@@ -18,28 +18,33 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-contact">
-        <a>kontakt@fiking.hr</a>
+        {/* <a href="mailto:info@fiking.hr">info@fiking.hr</a> */}
         <div className="social-buttons">
-          <IconLink
+          {/* <IconLink
             icon={IconBrandDiscord}
             url="https://discord.com/"
             iconSize={32}
-          />
-          <IconLink
+          /> */}
+          {/* <IconLink
             icon={IconBrandLinkedin}
             url="https://discord.com/"
             iconSize={32}
-          />
+          /> */}
           <IconLink
             icon={IconBrandInstagram}
-            url="https://discord.com/"
+            url="https://www.instagram.com/iptcroatia/"
             iconSize={32}
           />
           <IconLink
+            icon={IconMail}
+            url="mailto:info@fiking.hr"
+            iconSize={32}
+          />
+          {/* <IconLink
             icon={IconBrandFacebook}
             url="https://discord.com/"
             iconSize={32}
-          />
+          /> */}
         </div>
       </div>
     </div>

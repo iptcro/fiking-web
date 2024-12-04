@@ -57,6 +57,10 @@
   color: var(--perfect-white);
 }
 
+.hero-box.accent {
+  border: 6px solid var(--fiking-dark); 
+}
+
 .columns {
   display: grid;
   grid-template-columns: 100%;

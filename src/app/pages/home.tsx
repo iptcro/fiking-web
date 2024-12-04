@@ -36,8 +36,8 @@ export default function HomePage() {
             </p>
           </div>
           <div className={spages["btn-holder"]}>
-            <ButtonPrimary>Uključi se!</ButtonPrimary>
-            <ButtonSecondary>Što je IPT?</ButtonSecondary>
+            <a href="#howToJoin"><ButtonPrimary>Uključi se!</ButtonPrimary></a>
+            <a target="_blank" href="https://iptnet.info/"><ButtonSecondary>Što je IPT?</ButtonSecondary></a>
           </div>
         </div>
         <div className={spages["big-logo-holder"]}>
@@ -71,7 +71,7 @@ export default function HomePage() {
                 dio natjecateljskog tima!
               </p>
             </div>
-            <ButtonPrimary>Više o udruzi i članovima</ButtonPrimary>
+            {/* <ButtonPrimary>Više o udruzi i članovima</ButtonPrimary> */}
           </div>
 
           {/* IMG */}
@@ -89,19 +89,18 @@ export default function HomePage() {
           </div>
 
           {/* How to join */}
-          <div className={classNames(spages["hero-box"], spages["accent"])}>
+          <div id="howToJoin" className={classNames(spages["hero-box"], spages["accent"])}>
             <h2>Kako sudjelovati?</h2>
             <div style={{ fontWeight: "bold" }}>
               <p>1. Odluči da želiš :)</p>
               <p>
-                2. Pridruži se na Discord server udruge Fiking i pokaži dobru
-                volju.
+                2. Pošalji mail na <a href="mailto:info@fiking.hr">info@fiking.hr</a> i pridruži se na Discord server udruge!
               </p>
             </div>
 
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
               <h2>To je to!</h2>
-              <div>
+              {/* <div>
                 <ButtonPrimary>
                   Uključi se{" "}
                   <StaticIcon
@@ -110,7 +109,7 @@ export default function HomePage() {
                     color={"var(--fiking-light)"}
                   />
                 </ButtonPrimary>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -143,8 +142,7 @@ export default function HomePage() {
                 <p>
                   Problemi su otvorenog tipa, što znači da nema točnog rješenja,
                   pa istraživanje nalikuje pravom znanstvenom radu. Često su
-                  inspirirani pojavama iz svakodnevnog života ili industrije
-                  poput _ i _.
+                  inspirirani pojavama iz svakodnevnog života i industrije. Pogledajte ovogodišnji <a href="https://iptnet.info/problems/">popis problema!</a>
                 </p>
               </div>
             </div>
@@ -166,6 +164,7 @@ export default function HomePage() {
             </div>
 
             {/* TODO: Ovako treba dodavat ikone u button, dodaj icon param */}
+            <a target="_blank" href="https://iptnet.info/">
             <ButtonSecondary>
               Saznaj više{" "}
               <StaticIcon
@@ -174,6 +173,7 @@ export default function HomePage() {
                 color={"var(--fiking-dark)"}
               />
             </ButtonSecondary>
+            </a>
           </div>
         </div>
       </div>
