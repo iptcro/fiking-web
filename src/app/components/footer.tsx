@@ -1,4 +1,4 @@
-import { IconBrandLinkedin, IconBrandInstagram, IconBrandFacebook, IconBrandDiscord, IconMail } from "@tabler/icons-react";
+import { IconBrandInstagram, IconMail } from "@tabler/icons-react";
 import { IconLink } from "./buttons";
 import { FikingLogoWhite } from "./logo";
 import "@/app/styles/styles_comp.css";

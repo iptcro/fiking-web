@@ -1,4 +1,4 @@
-import AboutPage from "./pages/about";
+// import AboutPage from "./pages/about";
 import HomePage from "./pages/home";
 
 export default function Home() {
