@@ -12,13 +12,6 @@
   --off-black: #1E1E1E;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html,
 body {
   overflow-x: hidden;
@@ -96,11 +89,5 @@ u {
   h1 {
     font-size: 4rem;
     text-align: left;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
   }
 }
