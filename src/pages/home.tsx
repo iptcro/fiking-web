@@ -1,18 +1,18 @@
 import React from "react";
 import spages from "@/app/styles/styles_pages.module.css";
-import { ButtonPrimary, ButtonSecondary } from "../components/buttons";
+import { ButtonPrimary, ButtonSecondary } from "@/app/components/buttons";
 import Navbar from "@/app/components/navbar";
-import Footer from "../components/footer";
-import FAQ from "../components/faq";
+import Footer from "@/app/components/footer";
+import FAQ from "@/app/components/faq";
 import classNames from "classnames";
-import { StaticIcon } from "../components/Icon";
+import { StaticIcon } from "@/app/components/Icon";
 import {
   IconUsers,
   IconAtom,
   IconTrophy,
   IconArrowUpRight,
 } from "@tabler/icons-react";
-import KeyInfo from "../components/key_info";
+import KeyInfo from "@/app/components/key_info";
 
 export default function HomePage() {
   return (

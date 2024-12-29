@@ -1,28 +1,41 @@
+"use client";
 import * as React from "react";
-import "@/app/styles/styles_comp.css";
+import navbar from "@/app/styles/navbar_styles.module.css";
 import { Button } from "@mui/base/Button";
 import { FikingLogo } from "./logo";
 import { IconMenu2 } from "@tabler/icons-react";
 import StaticIcon from "./Icon";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import classNames from "classnames";
 
 export default function Navbar() {
+  const pathname = usePathname();
   return (
-    <div className="top-bar">
-      <div className="nav-bar">
+    <div className={navbar["top-bar"]}>
+      <div className={navbar["nav-bar"]}>
         <div>
-          <a>
+          <Link href="/">
             <FikingLogo />
-          </a>
+          </Link>
         </div>
-        {/* <Button className="nav-bar-item">O nama</Button>
-        <Button className="nav-bar-item">Raspored</Button>
+        <Link href="/about">
+          <Button className={navbar["nav-bar-item"]}>O nama</Button>
+        </Link>
+        {/*<Button className="nav-bar-item">Raspored</Button>
         <Button className="nav-bar-item">Prošla natjecanja</Button> */}
-        <a href="#howToJoin"><Button className="nav-bar-item accent">
-          Javi nam se!
-        </Button></a>
+        {pathname == "/" && (
+          <Link href="#howToJoin">
+            <Button
+              className={classNames(navbar["nav-bar-item"], navbar["accent"])}
+            >
+              Javi nam se!
+            </Button>
+          </Link>
+        )}
       </div>
-      {/*Umjesto restiliziranja ovog mozda drawer iz MUI?*/ }
-      <div className="nav-menu-button">
+      {/*Umjesto restiliziranja ovog mozda drawer iz MUI?*/}
+      <div className={navbar["nav-menu-button"]}>
         <StaticIcon icon={IconMenu2} size={32} />
       </div>
     </div>

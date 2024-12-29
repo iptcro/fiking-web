@@ -27,7 +27,11 @@
   background-color: var(--fiking-light);
 }
 
-.color h1, .color h2, .color h3, .color p, .color a {
+.color h1,
+.color h2,
+.color h3,
+.color p,
+.color a {
   color: white;
 }
 
@@ -52,13 +56,22 @@
   text-align: justify;
 }
 
-.hero-box.accent, .hero-box.accent h2{
+.hero-box.accent,
+.hero-box.accent h2 {
   background-color: var(--fiking-light);
   color: var(--perfect-white);
 }
 
 .hero-box.accent {
-  border: 6px solid var(--fiking-dark); 
+  border: 6px solid var(--fiking-dark);
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
 }
 
 .columns {
@@ -88,6 +101,23 @@
   /* need to specify both height and width */
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.target-box {
+  background-color: var(--gray-alpha-100);
+  max-width: 50rem;
+  padding: 1rem 2rem;
+  text-align: justify;
+  margin: 1rem auto;
+}
+
+.about-card {
+  background-color: var(--gray-alpha-100);
+  padding: 2rem;
+}
+
+.about-card * {
+  padding: 1rem;
 }
 
 .btn-holder {
@@ -153,4 +183,3 @@
     height: 6.2rem;
   }
 }
-
