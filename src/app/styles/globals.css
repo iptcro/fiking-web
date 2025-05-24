@@ -3,19 +3,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --fiking-light: #0cacd4; 
+  --fiking-light: #0cacd4;
   --fiking-dark: #0b5163;
   --fiking-gray: #819fab;
   --fiking-graydark: #4f7381;
   --fiking-darkest: #03303b;
   --perfect-white: #ffffff;
+  --fiking-secondary: #ce552e;
+  --fiking-secondary-light: #fff1d3;
   --off-black: #1E1E1E;
 }
 
 html,
 body {
   overflow-x: hidden;
-  font-size: 16px; /* or 100% */
+  font-size: 16px;
+  /* or 100% */
   /* This makes all rem-based text scale relative to this base size: */
 }
 
@@ -75,9 +78,11 @@ u {
     font-size: 3.2rem;
     text-align: left;
   }
+
   h2 {
     font-size: 1.5rem;
   }
+
   h3 {
     font-size: 1.3rem;
   }

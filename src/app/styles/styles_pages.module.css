@@ -141,26 +141,40 @@
   height: 13rem;
 }
 
+/* Conference page */
+.conference-page span {
+  color: var(--fiking-dark);
+}
+
+.conference-page .btn-primary {
+  background-color: var(--fiking-secondary);
+}
+
 /* Zmall desktop / Tablet*/
 @media only screen and (min-width: 768px) {
   .big-logo-holder {
     display: flex;
   }
+
   .btn-holder {
     justify-content: start;
   }
+
   .columns {
     grid-template-columns: 49% 49%;
     column-gap: 2%;
   }
+
   .description {
     max-width: 400px;
   }
+
   .ipt-icon {
     /* need to specify both height and width */
     width: 3rem;
     height: 3rem;
   }
+
   .hero-box {
     padding: 2rem;
   }
@@ -171,12 +185,15 @@
   .hero {
     padding: 64px 12%;
   }
+
   .big-logo {
     height: 20rem;
   }
+
   .description {
     max-width: 600px;
   }
+
   .ipt-icon {
     /* need to specify both height and width */
     width: 6.2rem;

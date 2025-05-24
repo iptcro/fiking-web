@@ -126,9 +126,11 @@
     grid-template-columns: 85% auto;
     padding: 60px;
   }
+
   .card {
     padding: 0px 2rem;
   }
+
   .card-question {
     font-size: 1.2rem;
   }

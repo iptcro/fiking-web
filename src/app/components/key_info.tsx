@@ -8,80 +8,89 @@ import {
   IconTestPipe,
   IconChevronLeft,
   IconChevronRight,
+  TablerIcon,
+  IconPinned,
+  IconUsers,
+  IconHandFingerRight,
 } from "@tabler/icons-react";
 import { StaticIcon } from "./Icon";
 
-const key_info = [
-  {
-    id: 1,
-    icon: IconSchool,
-    title: "studentsko natjecanje",
-  },
-  {
-    id: 2,
-    icon: IconCalendarMonth,
-    title: "7. - 13. travnja",
-  },
-  {
-    id: 3,
-    icon: IconMapPin,
-    title: "Poljska",
-  },
-  {
-    id: 4,
-    icon: IconTestPipe,
-    title: "STEM",
-  },
-];
+type KeyInfoItem = {
+  id: number;
+  icon: string;
+  title: string;
+};
 
-const gridTemplate = Array(key_info.length).fill("auto").join(" ");
-Array(key_info.length).fill("auto").join(" ");
-export default function KeyInfo() {
+type KeyInfoProps = {
+  keyInfo: KeyInfoItem[];
+};
+
+const iconMap: Record<string, TablerIcon> = {
+  IconSchool,
+  IconCalendarMonth,
+  IconMapPin,
+  IconTestPipe,
+  IconPinned,
+  IconUsers,
+  IconHandFingerRight,
+};
+
+export default function KeyInfo({ keyInfo }: KeyInfoProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrev = () => {
+  const handlePrev = () =>
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? key_info.length - 1 : prevIndex - 1
+      prevIndex === 0 ? keyInfo.length - 1 : prevIndex - 1
     );
-  };
 
-  const handleNext = () => {
+  const handleNext = () =>
     setCurrentIndex((prevIndex) =>
-      prevIndex === key_info.length - 1 ? 0 : prevIndex + 1
+      prevIndex === keyInfo.length - 1 ? 0 : prevIndex + 1
     );
-  };
+
+  const gridTemplate = Array(keyInfo.length).fill("auto").join(" ");
 
   return (
     <div>
-    <div className={styles["key-info-list"]} style={{display: "grid", gridTemplateColumns: gridTemplate}}>
-      {key_info.map((event) => (
-        <div key={event.toString()} className={styles["key-info-box"]}>
-            <div>
-            <StaticIcon icon={event.icon} size={40}/>
-            </div>
-            <h2>{event.title}</h2>
-        </div>
-      ))}
-    </div>
-    <div className={styles["key-info-carousel"]}>
-      <button onClick={handlePrev} className={styles["key-info-btn"]}>
-        <StaticIcon icon={IconChevronLeft} size={60} />
-      </button>
-
       <div
-        key={key_info[currentIndex].id}
-        className={styles["carousel-item"]}
+        className={styles["key-info-list"]}
+        style={{ display: "grid", gridTemplateColumns: gridTemplate }}
       >
-        <div style={{ display: "flex" }}>
-          <StaticIcon icon={key_info[currentIndex].icon} size={40} />
-          <h2>{key_info[currentIndex].title}</h2>
-        </div>
+        {keyInfo.map((event) => {
+          const Icon = iconMap[event.icon];
+          return (
+            <div key={event.id} className={styles["key-info-box"]}>
+              <div>
+                <StaticIcon icon={Icon} size={40} />
+              </div>
+              <h2>{event.title}</h2>
+            </div>
+          );
+        })}
       </div>
 
-      <button onClick={handleNext} className={styles["key-info-btn"]}>
-        <StaticIcon icon={IconChevronRight} size={60} />
-      </button>
-    </div>
+      <div className={styles["key-info-carousel"]}>
+        <button onClick={handlePrev} className={styles["key-info-btn"]}>
+          <StaticIcon icon={IconChevronLeft} size={60} />
+        </button>
+
+        <div
+          key={keyInfo[currentIndex].id}
+          className={styles["carousel-item"]}
+        >
+          <div style={{ display: "flex" }}>
+            <StaticIcon
+              icon={iconMap[keyInfo[currentIndex].icon]}
+              size={40}
+            />
+            <h2>{keyInfo[currentIndex].title}</h2>
+          </div>
+        </div>
+
+        <button onClick={handleNext} className={styles["key-info-btn"]}>
+          <StaticIcon icon={IconChevronRight} size={60} />
+        </button>
+      </div>
     </div>
   );
 }

@@ -22,6 +22,9 @@ export default function Navbar() {
         <Link href="/about">
           <Button className={navbar["nav-bar-item"]}>O nama</Button>
         </Link>
+        <Link href="/conference">
+          <Button className={navbar["nav-bar-item"]}>IPT Conference</Button>
+        </Link>
         {/*<Button className="nav-bar-item">Raspored</Button>
         <Button className="nav-bar-item">Prošla natjecanja</Button> */}
         {pathname == "/" && (

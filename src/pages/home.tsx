@@ -10,9 +10,16 @@ import {
   IconUsers,
   IconAtom,
   IconTrophy,
-  IconArrowUpRight,
+  IconArrowUpRight
 } from "@tabler/icons-react";
 import KeyInfo from "@/app/components/key_info";
+
+export const homeKeyInfo = [
+  { id: 1, icon: "IconSchool", title: "studentsko natjecanje" },
+  { id: 2, icon: "IconCalendarMonth", title: "7. - 13. travnja" },
+  { id: 3, icon: "IconMapPin", title: "Poljska" },
+  { id: 4, icon: "IconTestPipe", title: "STEM" },
+];
 
 export default function HomePage() {
   return (
@@ -50,7 +57,7 @@ export default function HomePage() {
       </div>
 
       <div className={classNames(spages["hero"], spages["color"])}>
-        <KeyInfo />
+        <KeyInfo keyInfo={homeKeyInfo} />
       </div>
 
       <div className={classNames(spages["hero"], spages["columns"])}>
@@ -165,14 +172,14 @@ export default function HomePage() {
 
             {/* TODO: Ovako treba dodavat ikone u button, dodaj icon param */}
             <a target="_blank" href="https://iptnet.info/">
-            <ButtonSecondary>
-              Saznaj više{" "}
-              <StaticIcon
-                icon={IconArrowUpRight}
-                size={24}
-                color={"var(--fiking-dark)"}
-              />
-            </ButtonSecondary>
+              <ButtonSecondary>
+                Saznaj više{" "}
+                <StaticIcon
+                  icon={IconArrowUpRight}
+                  size={24}
+                  color={"var(--fiking-dark)"}
+                />
+              </ButtonSecondary>
             </a>
           </div>
         </div>
