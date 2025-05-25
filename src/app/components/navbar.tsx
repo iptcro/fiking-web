@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import navbar from "@/app/styles/navbar_styles.module.css";
+import styles from "@/app/styles/navbar_styles.module.css";
 import { Button } from "@mui/base/Button";
 import { FikingLogo } from "./logo";
 import { IconMenu2 } from "@tabler/icons-react";
@@ -11,37 +11,56 @@ import classNames from "classnames";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
+  const navLinks = (
+    <>
+      <Link href="/">
+        <Button className={styles["nav-bar-item"]}>Fiking</Button>
+      </Link>
+      <Link href="/about">
+        <Button className={styles["nav-bar-item"]}>O nama</Button>
+      </Link>
+      <Link href="/conference">
+        <Button className={styles["nav-bar-item"]}>IPT Conference</Button>
+      </Link>
+      {pathname === "/" && (
+        <Link href="#howToJoin">
+          <Button
+            className={classNames(styles["nav-bar-item"], styles["accent"])}
+          >
+            Javi nam se!
+          </Button>
+        </Link>
+      )}
+    </>
+  );
+
   return (
-    <div className={navbar["top-bar"]}>
-      <div className={navbar["nav-bar"]}>
-        <Link href="/">
-          <FikingLogo />
-        </Link>
-        <Link href="/home">
-          <Button className={navbar["nav-bar-item"]}>Fiking</Button>
-        </Link>
-        <Link href="/about">
-          <Button className={navbar["nav-bar-item"]}>O nama</Button>
-        </Link>
-        <Link href="/conference">
-          <Button className={navbar["nav-bar-item"]}>IPT Conference</Button>
-        </Link>
-        {/*<Button className="nav-bar-item">Raspored</Button>
-        <Button className="nav-bar-item">Prošla natjecanja</Button> */}
-        {pathname == "/" && (
-          <Link href="#howToJoin">
-            <Button
-              className={classNames(navbar["nav-bar-item"], navbar["accent"])}
-            >
-              Javi nam se!
-            </Button>
+    <div className={styles["top-bar"]}>
+      <div className={styles["nav-bar"]}>
+        {!menuOpen && (
+          <Link href="/">
+            <FikingLogo />
           </Link>
         )}
+
+        <div className={styles["nav-links"]}>{navLinks}</div>
+
+        <div className={styles["nav-menu-button"]} onClick={toggleMenu}>
+          <StaticIcon icon={IconMenu2} size={32} />
+        </div>
       </div>
-      {/*Umjesto restiliziranja ovog mozda drawer iz MUI?*/}
-      <div className={navbar["nav-menu-button"]}>
-        <StaticIcon icon={IconMenu2} size={32} />
-      </div>
+
+      {menuOpen && (
+        <div className={styles["mobile-dropdown"]}>
+          {navLinks}
+        </div>
+      )}
     </div>
   );
 }

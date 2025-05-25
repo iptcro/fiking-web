@@ -4,15 +4,27 @@
 
 .nav-bar {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--perfect-white);
   padding: 16px 16px;
 }
 
-.nav-bar-item {
-  padding: 3px 5px;
-  margin-left: 20px;
-
+/* Mobile dropdown */
+.nav-links {
   display: none;
+}
+
+.mobile-dropdown {
+  background-color: white;
+  width: 100%;
+}
+
+.nav-bar-item {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
 
   font-size: 1.2rem;
   font-weight: bold;
@@ -49,9 +61,21 @@
 /* Zmall desktop / Tablet*/
 @media only screen and (min-width: 768px) {
   .nav-menu-button {
-    visibility: hidden;
+    display: none;
+    cursor: pointer;
   }
+
   .nav-bar-item {
     display: inline;
   }
+
+  .mobile-dropdown {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
 }
