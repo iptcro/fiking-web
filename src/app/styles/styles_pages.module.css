@@ -44,14 +44,6 @@
   padding: 1rem;
 }
 
-.hero-box h2 {
-  color: var(--fiking-darkest);
-}
-
-.hero-box h3 {
-  color: var(--fiking-light);
-}
-
 .hero-box p {
   text-align: justify;
 }
@@ -66,12 +58,15 @@
   border: 6px solid var(--fiking-dark);
 }
 
+.divider {
+  height: 1rem;
+  padding: 0;
+}
+
 .align-center {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: justify;
 }
 
 .columns {
@@ -178,6 +173,11 @@
   .hero-box {
     padding: 2rem;
   }
+
+  .divider {
+    height: 1rem;
+    padding: 0;
+  }
 }
 
 /* Large Desktop */
@@ -198,5 +198,10 @@
     /* need to specify both height and width */
     width: 6.2rem;
     height: 6.2rem;
+  }
+
+  .divider {
+    height: 1rem;
+    padding: 0;
   }
 }

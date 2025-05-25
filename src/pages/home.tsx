@@ -104,20 +104,6 @@ export default function HomePage() {
                 2. Pošalji mail na <a href="mailto:info@fiking.hr">info@fiking.hr</a> i pridruži se na Discord server udruge!
               </p>
             </div>
-
-            <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <h2>To je to!</h2>
-              {/* <div>
-                <ButtonPrimary>
-                  Uključi se{" "}
-                  <StaticIcon
-                    icon={IconArrowUpRight}
-                    size={24}
-                    color={"var(--fiking-light)"}
-                  />
-                </ButtonPrimary>
-              </div> */}
-            </div>
           </div>
         </div>
 
@@ -185,9 +171,47 @@ export default function HomePage() {
         </div>
       </div>
 
+      <div className={classNames(spages["hero"], spages["color"], spages["divider"])}></div>
+
+      <div className={classNames(spages["hero"])}>
+        <h2>IPT 2025: Naši studenti prvi put u polufinalu!</h2>
+        <div className={classNames(spages["columns"])}>
+
+          <div className={spages["align-center"]}>
+            <p>
+              Naš tim je ove godine ostvario povijesni uspjeh — prvi put smo se plasirali u polufinale Međunarodnog turnira fizičara (IPT)! Turnir se održao u Poljskoj i okupio timove s više od 25 sveučilišta iz cijelog svijeta. Odabrano je 18 zemalja koje su se natjecale, a mi smo među njima zauzeli 9. mjesto.
+            </p>
+            <p>
+              Odlazak na turnir u Poljsku bio je moguć zahvaljujući podršci fakulteta, nekoliko lokalnih tvrtki te velikom broju prijatelja, obitelji i podupiratelja koji su donirali putem crowdfundinga – od srca hvala svima!
+            </p>
+            <p>
+              Pripreme za IPT 2026 već su počele — ako želiš biti dio ekipe i iskusiti znanost iz prve ruke, javi nam se!
+            </p>
+            <div style={{ textAlign: "center" }}>
+              <img
+                src="/media/sponsors.svg"
+                alt="Sponzori"
+                style={{ maxWidth: "100%", borderRadius: "12px", marginTop: "1rem" }}
+              />
+            </div>
+          </div>
+          <div className={spages["align-center"]}>
+            <img
+              src="/media/archive/ipt_2025_1.jpg"
+              alt="team-croatia"
+              style={{
+                width: "100%",
+                borderRadius: "18px",
+                padding: "0",
+              }}
+            />
+          </div>
+        </div>
+      </div>
+
       <div className={classNames(spages["hero"], spages["color"])}>
         <div>
-          <h1>Još nešto te zanima?</h1>
+          <h2>Još nešto te zanima?</h2>
           <FAQ />
         </div>
       </div>

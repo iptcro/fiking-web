@@ -33,14 +33,15 @@ export default function ConferencePage() {
                         </p>
                         <a href="#howToJoin"><ButtonPrimary>REGISTER NOW!</ButtonPrimary></a>
                     </div>
-                    <div className={spages["align-center"]}>
+                    <div className={spages["align-center"]} style={{ alignItems: "center" }}>
                         <img
                             src="/media/conference/presenter.svg"
                             alt="presenter"
                             style={{
-                                width: "100%",
+                                width: "50%",
                                 borderRadius: "18px",
                                 padding: "0",
+
                             }}
                         />
                     </div>

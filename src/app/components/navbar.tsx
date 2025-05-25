@@ -14,11 +14,12 @@ export default function Navbar() {
   return (
     <div className={navbar["top-bar"]}>
       <div className={navbar["nav-bar"]}>
-        <div>
-          <Link href="/">
-            <FikingLogo />
-          </Link>
-        </div>
+        <Link href="/">
+          <FikingLogo />
+        </Link>
+        <Link href="/home">
+          <Button className={navbar["nav-bar-item"]}>Fiking</Button>
+        </Link>
         <Link href="/about">
           <Button className={navbar["nav-bar-item"]}>O nama</Button>
         </Link>

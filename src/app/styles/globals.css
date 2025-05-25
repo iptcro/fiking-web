@@ -42,12 +42,15 @@ h1 {
   color: var(--fiking-light);
 }
 
+
 h2 {
   font-size: 1.2rem;
+  color: var(--fiking-darkest);
 }
 
 h3 {
   font-size: 1.1rem;
+  color: var(--fiking-light);
 }
 
 
