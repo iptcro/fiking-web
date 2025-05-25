@@ -31,7 +31,7 @@ export default function ConferencePage() {
                         <p>
                             The conference is <strong><span>open to the public</span></strong> and free for all participants. Registration is required!
                         </p>
-                        <a href="#howToJoin"><ButtonPrimary>REGISTER NOW!</ButtonPrimary></a>
+                        <a href="https://forms.gle/StGHPfhiMgyg8mZp7" target="_blank"><ButtonPrimary>REGISTER NOW!</ButtonPrimary></a>
                     </div>
                     <div className={spages["align-center"]} style={{ alignItems: "center" }}>
                         <img
