@@ -52,9 +52,88 @@ export default function ConferencePage() {
                 <KeyInfo keyInfo={conferenceKeyInfo} />
             </div>
 
-            <div className={classNames(spages["hero"])}>
-                <h1>More info soon...</h1>
-            </div>
+            <section className={spages["hero"]}>
+                <h1>Conference presentations</h1>
+                <div className={classNames(spages["programme-list"], spages["columns"])}>
+                    {[
+                        {
+                            title: "Traveling flame",
+                            lecturer: "Luka Passek Kumerički",
+                            country: "Croatia",
+                        },
+                        {
+                            title: "Flying coin",
+                            lecturer: "Elias Rothlin",
+                            country: "Switzerland",
+                        },
+                        {
+                            title: "Oscillating rings",
+                            lecturer: "Matteo Murdaca & Emanuele Serrati",
+                            country: "Finland",
+                        },
+                        {
+                            title: "Bouncing honey",
+                            lecturer: "Nina Mitroczuk & Michał Świątek",
+                            country: "Poland",
+                        },
+                        {
+                            title: "Chaotic laces",
+                            lecturer: "Borna Stjepić",
+                            country: "Croatia",
+                        },
+                        {
+                            title: "The slinky",
+                            lecturer: "Igor Nowik & Małgorzata Flis",
+                            country: "Poland",
+                        },
+                        {
+                            title: "Rubber shot",
+                            lecturer: "Ivan Vučković",
+                            country: "Croatia",
+                        },
+                    ].map((talk, index) => (
+                        <div key={index} className={spages["programme-item"]}>
+                            <h2>{talk.title}</h2>
+                            <h3>
+                                {talk.lecturer}{" "}
+                                <span className={spages["country"]}>({talk.country})</span>
+                            </h3>
+                        </div>
+                    ))}
+                </div>
+                <p>Check out the full list of this year&apos;s problems <span><a href="https://ipt.science/problems/">here!</a></span></p>
+            </section>
+
+            <section className={classNames(spages["hero"], spages["color"])}>
+                <h1>Preliminary schedule</h1>
+                <div className={spages["schedule-table"]}>
+                    {[
+                        { time: "14:30", event: "Doors Open" },
+                        { time: "15:00", event: "Official Start & Introductory Speeches" },
+                        { time: "15:20", event: "Traveling Flame – Luka ", country: "CRO" },
+                        { time: "15:35", event: "Flying Coin – Elias ", country: "SWI" },
+                        { time: "15:50", event: "Oscillating Rings – Matteo & Emanuele ", country: "FIN" },
+                        { time: "16:05", event: "Short Break" },
+                        { time: "16:20", event: "ICM Info – F. Landek" },
+                        { time: "16:25", event: "Bouncing Honey – Nina & Michał ", country: "POL" },
+                        { time: "16:40", event: "Chaotic Laces – Borna ", country: "CRO" },
+                        { time: "16:55", event: "The Slinky – Igor & Gosia ", country: "POL" },
+                        { time: "17:10", event: "Rubber Shot – Ivan ", country: "CRO" },
+                        { time: "17:25", event: "Closing Ceremony" },
+                        { time: "17:40", event: "Networking & Snacks" },
+                    ].map((item, index) => (
+                        <div key={index} className={spages["schedule-row"]}>
+                            <div className={spages["schedule-time"]}>{item.time}</div>
+                            <div className={spages["schedule-event"]}>
+                                {item.event}
+                                {item.country && (
+                                    <span className={spages["country"]}>({item.country})</span>
+                                )}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
             <Footer />
         </div >

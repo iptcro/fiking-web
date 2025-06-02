@@ -145,6 +145,37 @@
   background-color: var(--fiking-secondary);
 }
 
+.schedule-table {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.schedule-row {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.schedule-time {
+  font-weight: bold;
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.schedule-event {
+  flex: 1;
+}
+
+.country {
+  color: var(--fiking-accent);
+  /* Or use any color you prefer */
+  margin-left: 0.25rem;
+  font-weight: 500;
+}
+
 /* Zmall desktop / Tablet*/
 @media only screen and (min-width: 768px) {
   .big-logo-holder {
