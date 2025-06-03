@@ -78,7 +78,7 @@ export default function ConferencePage() {
                         },
                         {
                             title: "Chaotic laces",
-                            lecturer: "Borna Stjepić",
+                            lecturer: "Ema Novak & Nika Macan",
                             country: "Croatia",
                         },
                         {
@@ -116,7 +116,7 @@ export default function ConferencePage() {
                         { time: "16:05", event: "Short Break" },
                         { time: "16:20", event: "ICM Info – F. Landek" },
                         { time: "16:25", event: "Bouncing Honey – Nina & Michał ", country: "POL" },
-                        { time: "16:40", event: "Chaotic Laces – Borna ", country: "CRO" },
+                        { time: "16:40", event: "Chaotic Laces – Ema & Nika ", country: "CRO" },
                         { time: "16:55", event: "The Slinky – Igor & Gosia ", country: "POL" },
                         { time: "17:10", event: "Rubber Shot – Ivan ", country: "CRO" },
                         { time: "17:25", event: "Closing Ceremony" },
