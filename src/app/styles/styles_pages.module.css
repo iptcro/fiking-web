@@ -176,6 +176,42 @@
   font-weight: 500;
 }
 
+.abstract {
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more {
+  margin-top: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--fiking-dark);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.programme-list {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.programme-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
 /* Zmall desktop / Tablet*/
 @media only screen and (min-width: 768px) {
   .big-logo-holder {

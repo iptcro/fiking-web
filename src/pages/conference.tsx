@@ -14,6 +14,58 @@ export const conferenceKeyInfo = [
     { id: 4, icon: "IconHandFingerRight", title: "registration required" },
 ];
 
+const talks = [
+    {
+        title: "Traveling flame",
+        lecturer: "Luka Passek Kumerički",
+        country: "Croatia",
+        abstract: "Under certain circumstances a flame can travel along an open canal filled with liquid fuel. We will give an explanation of the phenomenon and its periodic behaviour and show the results of our investigations of its lifetime and speed.",
+        image: ""
+    },
+    {
+        title: "Flying coin",
+        lecturer: "Elias Rothlin",
+        country: "Switzerland",
+        abstract: "One can make a coin fly from a table into a plate placed on it by blowing on it from a certain angle. We investigate the movement of the coin and ist dependence on relevant parameters through simulations and experiments. Based on our findings, we determine the Swiss coin which achieves the maximum height. By using a household compressor, we could repeatably land the coin in a cup at 24.5 ± 0.2 cm height. We also investigate the problem of predicting the face on which the coin lands. Based on experimental data, we determine suitable cup heights where this is possible.",
+        image: ""
+    },
+    {
+        title: "Oscillating rings",
+        lecturer: "Matteo Murdaca & Emanuele Serrati",
+        country: "Finland",
+        abstract: "Imagine two ferromagnetic rings of different sizes tied together with a string, then suspended from above using another string attached to the larger ring. When you hang the whole setup under a magnet, the magnetic force holds it up, and the rings are free to spin around the vertical axis. In this talk, we’ll explore how this system behaves—how the rings rotate and interact—based on things like their size, shape, thickness, magnetic properties, and how they’re positioned. We'll also look at what changes if you swap out the larger ring for a solid disk.",
+        image: ""
+    },
+    {
+        title: "Bouncing honey",
+        lecturer: "Nina Mitroczuk & Michał Świątek",
+        country: "Poland",
+        abstract: "When honey is dripping from a spoon, the trickle can stop flowing, oscillate up and down before flowing again. We analysed the flow of honey from a spoon. Initially, it forms a continuous stream, which eventually breaks up, goes up and down in a chaotic manner before transitioning to periodic droplet formation, where each drop has a nearly constant volume. These three stages correspond to distinct flow regimes: continuous flow, the “dripping faucet” flow regime, and droplet formation. In our experiments we used a scale connected to a computer and a camera to record the experiment.The honey flowed through a 3D printed nozzle attached to a container, which enabled us to control the flow rate.\n\n In addition to honey, we investigated other viscous fluids, including molasses, glycerol, and corn syrup, and measured key relevant parameters such as density, viscosity, and surface tension.Varying the relevant parameters, we obtained a phase diagram that maps the observed flow regimes.This diagram predicts the type of flow based on the Oh and Re numbers for a given viscous fluid",
+        image: "/media/conference/honey.png"
+    },
+    {
+        title: "Chaotic laces",
+        lecturer: "Ema Novak & Nika Macan",
+        country: "Croatia",
+        abstract: "When a sufficiently large number of shoelaces is rotated in a centrifuge, they become entangled. Using the mathematical definition of a knot, it is possible to find the probability distribution for knot formation in dependence of string length and number. We came up with a mathematical model that is in good agreement with the experiments. When rotating many shoelaces, we encountered an interesting problem, the formation of one big bundle in the middle which was not intuitive from the start.",
+        image: ""
+    },
+    {
+        title: "The slinky",
+        lecturer: "Igor Nowik & Małgorzata Flis",
+        country: "Poland",
+        abstract: "When one places a slinky at the top of a staircase, it can be pushed to travel in its peculiar motion down the stairs. Investigate how the average slope influences the motion of the slinky. What is the minimal average slope such that the slinky successfully reaches its steady periodic motion? What happens if you replace the stairs with an inclined plane? Our presentation aims to get familiar with this phenomenon, present the experimental results and our theoretical model.",
+        image: ""
+    },
+    {
+        title: "Rubber shot",
+        lecturer: "Ivan Vučković",
+        country: "Croatia",
+        abstract: "One can launch a rubber band using its own extension. In this work, we want to estimate the highest possible launch speed of a rubber band and check the maximal speed that can be reliably achieved over multiple shots. We construct a theoretical model by assuming that rubber band is a 1D chain with two possible configurations of chain links. Then we use the conservation of energy and fit the free parameters onto the measured speeds of the rubber. Speeds were measured in two ways to differentiate maximum and reliable speeds. Since rubber loses some of its restoring force after being stretched a few times, we tested how this affects speed. We found that after about 10 stretches, the force levels off and therefore, we made a distinction: maximum speed was measured using rubber bands that hadn’t been stretched before, and reliable speed was measured using rubber bands that had already been stretched enough to reach that steady force level. Our results for velocities were 58 m/s for maximal and and 36 m/s for reliable velocity.",
+        image: ""
+    },
+]
+
 export default function ConferencePage() {
     return (
         <div className={classNames(spages["page"], spages["conference-page"])}>
@@ -54,54 +106,37 @@ export default function ConferencePage() {
 
             <section className={spages["hero"]}>
                 <h1>Conference presentations</h1>
-                <div className={classNames(spages["programme-list"], spages["columns"])}>
-                    {[
-                        {
-                            title: "Traveling flame",
-                            lecturer: "Luka Passek Kumerički",
-                            country: "Croatia",
-                        },
-                        {
-                            title: "Flying coin",
-                            lecturer: "Elias Rothlin",
-                            country: "Switzerland",
-                        },
-                        {
-                            title: "Oscillating rings",
-                            lecturer: "Matteo Murdaca & Emanuele Serrati",
-                            country: "Finland",
-                        },
-                        {
-                            title: "Bouncing honey",
-                            lecturer: "Nina Mitroczuk & Michał Świątek",
-                            country: "Poland",
-                        },
-                        {
-                            title: "Chaotic laces",
-                            lecturer: "Ema Novak & Nika Macan",
-                            country: "Croatia",
-                        },
-                        {
-                            title: "The slinky",
-                            lecturer: "Igor Nowik & Małgorzata Flis",
-                            country: "Poland",
-                        },
-                        {
-                            title: "Rubber shot",
-                            lecturer: "Ivan Vučković",
-                            country: "Croatia",
-                        },
-                    ].map((talk, index) => (
-                        <div key={index} className={spages["programme-item"]}>
-                            <h2>{talk.title}</h2>
-                            <h3>
-                                {talk.lecturer}{" "}
-                                <span className={spages["country"]}>({talk.country})</span>
-                            </h3>
-                        </div>
-                    ))}
+                <div className={classNames(spages["programme-list"])}>
+                    {talks.map((talk, index) => {
+                        return (
+                            <div key={index} className={spages["programme-item"]}>
+                                <h2>{talk.title}</h2>
+                                <h3>
+                                    {talk.lecturer}{" "}
+                                    <span className={spages["country"]}>({talk.country})</span>
+                                </h3>
+                                <p className="abstract">
+                                    {talk.abstract + "\n"}
+                                    {talk.image && (
+                                        <img
+                                            src={talk.image}
+                                            alt={`${talk.title} image`}
+                                            style={{ width: "80%", display: "block" }}
+                                            className={spages["programme-image"]}
+                                        />
+                                    )}
+                                </p>
+
+                            </div>
+                        );
+                    })}
                 </div>
-                <p>Check out the full list of this year&apos;s problems <span><a href="https://ipt.science/problems/">here!</a></span></p>
+                <p>
+                    Check out the full list of this year&apos;s problems{" "}
+                    <span>
+                        <a href="https://ipt.science/problems/">here!</a>
+                    </span>
+                </p>
             </section>
 
             <section className={classNames(spages["hero"], spages["color"])}>
