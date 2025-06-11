@@ -84,6 +84,7 @@ export default function ConferencePage() {
                             The conference is <strong><span>open to the public</span></strong> and free for all participants. Registration is required!
                         </p>
                         <a href="https://forms.gle/StGHPfhiMgyg8mZp7" target="_blank"><ButtonPrimary>REGISTER NOW!</ButtonPrimary></a>
+                        <a href="https://us06web.zoom.us/j/88188527466?pwd=xLTqP03EkbAqhyeCe3hs8hHRqAwMbQ.1" target="_blank"><ButtonSecondary>JOIN ONLINE!</ButtonSecondary></a>
                     </div>
                     <div className={spages["align-center"]} style={{ alignItems: "center" }}>
                         <img
