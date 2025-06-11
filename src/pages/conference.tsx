@@ -33,7 +33,7 @@ const talks = [
         title: "Oscillating rings",
         lecturer: "Matteo Murdaca & Emanuele Serrati",
         country: "Finland",
-        abstract: "Imagine two ferromagnetic rings of different sizes tied together with a string, then suspended from above using another string attached to the larger ring. When you hang the whole setup under a magnet, the magnetic force holds it up, and the rings are free to spin around the vertical axis. In this talk, we’ll explore how this system behaves—how the rings rotate and interact—based on things like their size, shape, thickness, magnetic properties, and how they’re positioned. We'll also look at what changes if you swap out the larger ring for a solid disk.",
+        abstract: "We studied a system of two ferromagnetic rings of different radii tied together by an inner string, suspended by a magnet placed above and held down by an outer string. We consider two coupled equations of motion dependent on magnetic moment and string (inner and outer) torsion torques, and investigate the rotational motion of the disk based on magnetic permeability of the rings, moments of inertia, positions, thickness. We predict chaotic/unpredictable behavior of the position, velocities and equilibrium positions of the system as a function of parametric changes.",
         image: ""
     },
     {
