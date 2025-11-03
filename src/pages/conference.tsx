@@ -8,7 +8,7 @@ import { ButtonPrimary, ButtonSecondary } from "@/app/components/buttons";
 import KeyInfo from "@/app/components/key_info";
 
 export const conferenceKeyInfo = [
-    { id: 1, icon: "IconCalendarMonth", title: "June 11" },
+    { id: 1, icon: "IconCalendarMonth", title: "TBD" },
     { id: 2, icon: "IconPinned", title: "PMF Zagreb" },
     { id: 3, icon: "IconUsers", title: "open to public" },
     { id: 4, icon: "IconHandFingerRight", title: "registration required" },
@@ -78,13 +78,14 @@ export default function ConferencePage() {
 
                     <div className={spages["align-center"]}>
                         <p>
-                            We invite you to the first Croatian IPT conference, which will take place on <strong><span>June 11, 2025 at 2 PM</span></strong>, at the Department of Physics, Faculty of Science, University of Zagreb. The conference will be in hybrid mode and we will have participants from various countries.
+                            {/* We invite you to the first Croatian IPT conference, which will take place on <strong><span>June 11, 2025 at 2 PM</span></strong>, at the Department of Physics, Faculty of Science, University of Zagreb. The conference will be in hybrid mode and we will have participants from various countries. */}
+                            One of the events we organize is the <strong><span>Croatian IPT conference</span></strong>. There students can present the work they might have not had the chance to present at IPT, or are particularly proud of.
                         </p>
                         <p>
                             The conference is <strong><span>open to the public</span></strong> and free for all participants. Registration is required!
                         </p>
-                        <a href="https://forms.gle/StGHPfhiMgyg8mZp7" target="_blank"><ButtonPrimary>REGISTER NOW!</ButtonPrimary></a>
-                        <a href="https://us06web.zoom.us/j/88188527466?pwd=xLTqP03EkbAqhyeCe3hs8hHRqAwMbQ.1" target="_blank"><ButtonSecondary>JOIN ONLINE!</ButtonSecondary></a>
+                        {/* <a href="https://forms.gle/StGHPfhiMgyg8mZp7" target="_blank"><ButtonPrimary>REGISTER NOW!</ButtonPrimary></a>
+                        <a href="https://us06web.zoom.us/j/88188527466?pwd=xLTqP03EkbAqhyeCe3hs8hHRqAwMbQ.1" target="_blank"><ButtonSecondary>JOIN ONLINE!</ButtonSecondary></a> */}
                     </div>
                     <div className={spages["align-center"]} style={{ alignItems: "center" }}>
                         <img
@@ -106,7 +107,7 @@ export default function ConferencePage() {
             </div>
 
             <section className={spages["hero"]}>
-                <h1>Conference presentations</h1>
+                <h1>Conference presentations 2024.</h1>
                 <div className={classNames(spages["programme-list"])}>
                     {talks.map((talk, index) => {
                         return (
@@ -140,7 +141,7 @@ export default function ConferencePage() {
                 </p>
             </section>
 
-            <section className={classNames(spages["hero"], spages["color"])}>
+            {/* <section className={classNames(spages["hero"], spages["color"])}>
                 <h1>Preliminary schedule</h1>
                 <div className={spages["schedule-table"]}>
                     {[
@@ -169,7 +170,7 @@ export default function ConferencePage() {
                         </div>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
             <Footer />
         </div >

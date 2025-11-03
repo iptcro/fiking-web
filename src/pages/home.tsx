@@ -15,9 +15,9 @@ import {
 import KeyInfo from "@/app/components/key_info";
 
 export const homeKeyInfo = [
-  { id: 1, icon: "IconSchool", title: "studentsko natjecanje" },
-  { id: 2, icon: "IconCalendarMonth", title: "7. - 13. travnja" },
-  { id: 3, icon: "IconMapPin", title: "Poljska" },
+  { id: 1, icon: "IconSchool", title: "Studentsko Natjecanje" },
+  { id: 2, icon: "IconCalendarMonth", title: "26.-30. svibanj" },
+  { id: 3, icon: "IconMapPin", title: "Oklahoma State University, SAD" },
   { id: 4, icon: "IconTestPipe", title: "STEM" },
 ];
 

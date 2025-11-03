@@ -28,6 +28,9 @@ export default function Navbar() {
       <Link href="/conference">
         <Button className={styles["nav-bar-item"]}>IPT Conference</Button>
       </Link>
+      <Link href="/integration_bee">
+        <Button className={styles["nav-bar-item"]}>Integrijada</Button>
+      </Link>
       {pathname === "/" && (
         <Link href="#howToJoin">
           <Button
