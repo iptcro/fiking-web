@@ -26,16 +26,16 @@ export default function IntegrationBeePage() {
         style={{ display: "flex", justifyContent: "space-between" }}
       >
         <div className={spages["info-holder"]}>
-        <div className={spages["big-logo-holder"]} >
-          <img
-            src={"/media/logo/integrijada_banner.png"}
-            className={spages["big-logo"]}
-            alt="integrijada banner"
-             style={{
-                width: "100%"
-                }}
-          />
-        </div>
+          <div className={spages["big-logo-holder"]} >
+            <img
+              src={"/media/logo/integrijada_banner.png"}
+              className={spages["big-logo"]}
+              alt="integrijada banner"
+               style={{
+                  width: "100%"
+                  }}
+            />
+          </div>
           <div className={spages["description"]} style={{ maxWidth: "900px", margin: "0 auto" }}>
             <p>
               Natjecanje u integriranju osmišljeno je kao dinamično i javno događanje koje okuplja studente Sveučilišta u Zagrebu kako bi odmjerili
@@ -45,7 +45,8 @@ export default function IntegrationBeePage() {
             </p>
           </div>
           <div className={spages["btn-holder"]}>
-            <a target="_blank" href="https://iptnet.info/"><ButtonPrimary>Prijavi se!</ButtonPrimary></a>
+            <a target="_blank" href="https://forms.gle/C57LQZJaZ4xcpzSB7"><ButtonPrimary>Prijavi se!</ButtonPrimary></a>
+            <a target="_blank" href="https://www.instagram.com/integrijada/"><ButtonSecondary>Instagram</ButtonSecondary></a>
           </div>
         </div>
         <div className={spages["big-logo-holder"]} style={{ marginBottom: "10rem" }}>
@@ -61,10 +62,10 @@ export default function IntegrationBeePage() {
         </div>
       </div>
 
-      <div className={classNames(spages["hero"], spages["columns"])} style={{ marginTop: "-8rem" }}>
+      <div className={classNames(spages["hero"], spages["columns"])} style={{ marginTop: "-8rem", zIndex: -1 }}>
         <div>
           {/* Integrijada */}
-          <div className={spages["hero-box"]}>
+          <div className={classNames(spages["hero-box"], spages["accent"])}>
             <h2>Integrijada</h2>
             <div className={spages["description"]}>
               <p>
@@ -76,7 +77,6 @@ export default function IntegrationBeePage() {
               Najbolji natjecatelji dobivaju nagrade, ali najvažnija je titula “Velikog Integratora“ koja se dodjeljuje prvom mjestu na turniru. 
               </p>
             </div>
-            {/* <ButtonPrimary>Više o udruzi i članovima</ButtonPrimary> */}
           </div>
 
           {/* IMG */}
@@ -94,9 +94,9 @@ export default function IntegrationBeePage() {
           </div>
 
           {/* details */}
-          <div id="details" className={classNames(spages["hero-box"])}>
+          <div id="details" className={classNames(spages["hero-box"], spages["accent"])}>
             <h2>Ciljevi natjecanja</h2>
-            <div style={{ fontWeight: "bold" }}>
+            <div>
               <p>
                 Organizacijom natjecanja u integriranju šira zajednica dobiva priliku upoznati ljepotu i izazovnost analitičke matematike. 
                 Natjecanje promovira pozitivnu percepciju matematike kao dinamične, kreativne discipline. 
@@ -125,9 +125,9 @@ export default function IntegrationBeePage() {
             />
           </div>
 
-          <div id="details" className={classNames(spages["hero-box"])}>
+          <div id="details" className={classNames(spages["hero-box"], spages["accent"])}>
             <h2>Zašto sudjelovati?</h2>
-            <div style={{ fontWeight: "bold" }}>
+            <div>
                 <p>
                   Rješavanje integrala pod pritiskom vremena potiče brzo prepoznavanje tehnika, snalaženje pod pritiskom i kritično razmišljanje
                   za razvoj u realnom svijetu ispita, rokova i javnog govorenja. Natjecanje potiče samopouzdanje u prezentaciji matematičkog znanja pred auditorijem.
@@ -146,7 +146,6 @@ export default function IntegrationBeePage() {
               src={"/media/gallery/20241213_220839.jpg"}
               style={{
                 width: "100%",
-                // height: "20%",
                 borderRadius: "18px",
               }}
             />
@@ -160,31 +159,45 @@ export default function IntegrationBeePage() {
       <div className={classNames(spages["hero"])}>
         <h1>Integrijada 2024.</h1>
         <div className={classNames(spages["columns"])}>
-            <p>
-            NAPISATI NEŠTO O PROŠLOGODIŠNJOJ INTEGRIJADI
-            </p>
+          <div>
+            <div className={classNames(spages["hero-box"])}>
+              <h2>Prva integrijada</h2>
+              <p>
+              Na prošlogodišnjem Božićnom domjenku Fizičkog odsjeka PMF-a po prvi je put održana Integrijada, privukavši pritom veliki interes okupljenih. 
+              Zbog vrlo dobrog odaziva publike i pozitivnih reakcija sudionika, Integrijada prerasta u natjecanje koje na godišnjoj razini okuplja ljubitelje integralnog računa.
+              U prvom izdanju Integrijade, prestižnu titulu Velikog Integratora osvojio je Ilan Mihelja, čime je otvorena tradicija natjecanja koja će se, nadamo se, nastaviti i u narednim godinama.
+              </p>
+            </div>
+            <div className={classNames(spages["hero-box"])} style={{marginTop: "3rem"}}>
+              <h2>
+                Sponzori ovogodišnje intergijade
+              </h2>
+              {/* <div style={{ textAlign: "center" }}>
+                <img
+                  src="/media/sponsors.svg"
+                  alt="SponzoriIntegrijada"
+                  style={{ maxWidth: "100%", borderRadius: "12px", marginTop: "1rem" }}
+                />
+              </div> */}
+            </div>
+          </div>
+          <div>
           <div className={spages["align-center"]}>
             <h2>
-              Prošlogodišnji pobjednik i trenutni Veliki Integrator, IME PREZIME
+              Trenutni Veliki Integrator, Ilan Mihelja
             </h2>
-            {/* <div style={{ textAlign: "center" }}>
+            <div style={{ textAlign: "center" }}>
               <img
-                src="/media/sponsors.svg"
-                alt="Sponzori"
-                style={{ maxWidth: "100%", borderRadius: "12px", marginTop: "1rem" }}
+                src="/media/gallery/IMG-20241214-WA0012.jpg"
+                alt="team-croatia"
+                style={{
+                  width: "100%",
+                  borderRadius: "18px",
+                  padding: "0",
+                }}
               />
-            </div> */}
+            </div>
           </div>
-          <div className={spages["align-center"]}>
-            <img
-              src="/media/gallery/IMG-20241214-WA0012.jpg"
-              alt="team-croatia"
-              style={{
-                width: "100%",
-                borderRadius: "18px",
-                padding: "0",
-              }}
-            />
           </div>
         </div>
       </div>
