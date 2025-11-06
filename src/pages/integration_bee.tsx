@@ -172,13 +172,13 @@ export default function IntegrationBeePage() {
               <h2>
                 Sponzori ovogodišnje intergijade
               </h2>
-              {/* <div style={{ textAlign: "center" }}>
+              <div style={{ textAlign: "center" }}>
                 <img
-                  src="/media/sponsors.svg"
+                  src="/media/integrijada_logotipi.svg"
                   alt="SponzoriIntegrijada"
-                  style={{ maxWidth: "100%", borderRadius: "12px", marginTop: "1rem" }}
+                  style={{ maxWidth: "80%", borderRadius: "12px", marginTop: "1rem" }}
                 />
-              </div> */}
+              </div>
             </div>
           </div>
           <div>
