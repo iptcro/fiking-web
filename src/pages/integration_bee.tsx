@@ -3,19 +3,8 @@ import spages from "@/app/styles/styles_pages.module.css";
 import Navbar from "@/app/components/navbar";
 import Footer from "../app/components/footer";
 import classNames from "classnames";
-import { IconTargetArrow } from "@tabler/icons-react";
 import "@/app/styles/globals.css";
-import Gallery from "@/app/components/gallery";
 import { ButtonPrimary, ButtonSecondary } from "@/app/components/buttons";
-import FAQ from "@/app/components/faq";
-import { StaticIcon } from "@/app/components/Icon";
-import {
-  IconUsers,
-  IconAtom,
-  IconTrophy,
-  IconArrowUpRight
-} from "@tabler/icons-react";
-import KeyInfo from "@/app/components/key_info";
 
 export default function IntegrationBeePage() {
   return (

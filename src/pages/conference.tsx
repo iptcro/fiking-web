@@ -4,7 +4,6 @@ import Navbar from "@/app/components/navbar";
 import Footer from "../app/components/footer";
 import classNames from "classnames";
 import "@/app/styles/globals.css";
-import { ButtonPrimary, ButtonSecondary } from "@/app/components/buttons";
 import KeyInfo from "@/app/components/key_info";
 
 export const conferenceKeyInfo = [
