@@ -36,15 +36,24 @@ export default function HomePage() {
           </h1>
           <div className={spages["description"]}>
             <p>
-              IPT je međunarodno studentsko natjecanje u kojem timovi rješavaju
-              otvorene probleme u fizici. Nakon nekoliko mjeseci rada, sudionici
-              predstavljaju svoja rješenja i sudjeluju u znanstevnim raspravama
-              tijekom petodnevnog turnira.
+              IPT je međunarodno studentsko natjecanje u kojem timovi rješavaju otvorene probleme u fizici. Nakon nekoliko mjeseci rada, sudionici predstavljaju svoja rješenja i sudjeluju u znanstevnim raspravama tijekom petodnevnog turnira.
             </p>
           </div>
           <div className={spages["btn-holder"]}>
             <a href="#howToJoin"><ButtonPrimary>Uključi se!</ButtonPrimary></a>
-            <a target="_blank" href="https://iptnet.info/"><ButtonSecondary>Što je IPT?</ButtonSecondary></a>
+            <a target="_blank" href="https://ipt.science"><ButtonSecondary>Što je IPT?</ButtonSecondary></a>
+          </div>
+          <div className={spages["irb-message"]}>
+            <a target="_blank" href="https://irb.hr/">
+              <img
+                src={"/media/logo/irb_logo.png"}
+                alt="IRB logo"
+                className={spages["irb-logo"]}
+              />
+            </a>
+            <p>
+              Sudjelovanje studenata na Međunarodnom turniru fizičara (IPT) podržava <strong>Institut Ruđer Bošković</strong>.
+            </p>
           </div>
         </div>
         <div className={spages["big-logo-holder"]}>

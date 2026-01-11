@@ -79,6 +79,18 @@
   text-align: justify;
 }
 
+.irb-message {
+  display: flex;
+  align-items: center; /* vertical alignment */
+  gap: 1rem; 
+}
+
+.irb-logo {
+  width: 4rem;
+  height: auto;
+  flex-shrink: 0;
+}
+
 .icon-description {
   display: grid;
   grid-template-columns: auto auto;
@@ -227,7 +239,7 @@
     column-gap: 2%;
   }
 
-  .description {
+  .description, .irb-message {
     max-width: 400px;
   }
 
@@ -257,7 +269,7 @@
     height: 20rem;
   }
 
-  .description {
+  .description, .irb-message {
     max-width: 600px;
   }
 
