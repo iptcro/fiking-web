@@ -6,6 +6,7 @@ import classNames from "classnames";
 import { IconTargetArrow } from "@tabler/icons-react";
 import { ButtonPrimary } from "@/app/components/buttons";
 import "@/app/styles/globals.css";
+import Link from "next/link";
 import Gallery from "@/app/components/gallery";
 
 export default function AboutPage() {
@@ -94,7 +95,7 @@ export default function AboutPage() {
               znanosti u Hrvatskoj te povezivanju fakulteta i privatnih tvrtki.
             </p>
             <div className={spages["btn-holder"]}>
-              <a href="/support"><ButtonPrimary>Podrži nas!</ButtonPrimary></a>
+              <Link href="/support"><ButtonPrimary>Podrži nas!</ButtonPrimary></Link>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import spages from "@/app/styles/styles_pages.module.css";
 import Navbar from "@/app/components/navbar";
 import Footer from "../app/components/footer";
 import classNames from "classnames";
-import { IconTargetArrow, IconBuildingBank, IconHeartHandshake, IconCreditCard } from "@tabler/icons-react";
+import { IconBuildingBank, IconHeartHandshake } from "@tabler/icons-react";
 import "@/app/styles/globals.css";
 
 export default function SupportPage() {
@@ -31,7 +31,7 @@ export default function SupportPage() {
                 <strong>IBAN:</strong> <code style={{ background: '#eee', padding: '2px 5px', borderRadius: '4px' }}>HR89 2360 0001 1031 5842 8</code><br />
                 <strong>Model:</strong> HR00<br />
                 <strong>Poziv na broj:</strong> 84039896784<br />
-                <strong>Opis plaćanja:</strong> "Donacija za rad udruge"
+                <strong>Opis plaćanja:</strong> Donacija za rad udruge
                 </p>
             {/* Barkod / QR slika */}
             <div style={{ textAlign: "center", marginTop: "-20px" }}>

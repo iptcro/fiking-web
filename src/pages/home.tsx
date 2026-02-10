@@ -5,6 +5,7 @@ import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
 import FAQ from "@/app/components/faq";
 import classNames from "classnames";
+import Link from "next/link";
 import { StaticIcon } from "@/app/components/Icon";
 import {
   IconUsers,
@@ -40,9 +41,9 @@ export default function HomePage() {
             </p>
           </div>
           <div className={spages["btn-holder"]}>
-            <a href="#howToJoin"><ButtonPrimary>Uključi se!</ButtonPrimary></a>
-            <a target="_blank" href="https://ipt.science"><ButtonPrimary>Što je IPT?</ButtonPrimary></a>
-            <a href="/support"><ButtonPrimary>Podrži nas!</ButtonPrimary></a>
+            <Link href="#howToJoin"><ButtonPrimary>Uključi se!</ButtonPrimary></Link>
+            <Link target="_blank" href="https://ipt.science"><ButtonPrimary>Što je IPT?</ButtonPrimary></Link>
+            <Link href="/support"><ButtonPrimary>Podrži nas!</ButtonPrimary></Link>
           </div>
           <div className={spages["irb-message"]}>
             <a target="_blank" href="https://irb.hr/">
