@@ -41,7 +41,8 @@ export default function HomePage() {
           </div>
           <div className={spages["btn-holder"]}>
             <a href="#howToJoin"><ButtonPrimary>Uključi se!</ButtonPrimary></a>
-            <a target="_blank" href="https://ipt.science"><ButtonSecondary>Što je IPT?</ButtonSecondary></a>
+            <a target="_blank" href="https://ipt.science"><ButtonPrimary>Što je IPT?</ButtonPrimary></a>
+            <a href="/support"><ButtonPrimary>Podrži nas!</ButtonPrimary></a>
           </div>
           <div className={spages["irb-message"]}>
             <a target="_blank" href="https://irb.hr/">
@@ -102,17 +103,6 @@ export default function HomePage() {
                 borderRadius: "18px",
               }}
             />
-          </div>
-
-          {/* How to join */}
-          <div id="howToJoin" className={classNames(spages["hero-box"], spages["accent"])}>
-            <h2>Kako sudjelovati?</h2>
-            <div style={{ fontWeight: "bold" }}>
-              <p>1. Odluči da želiš :)</p>
-              <p>
-                2. Pošalji mail na <a href="mailto:info@fiking.hr">info@fiking.hr</a> i pridruži se na Discord server udruge!
-              </p>
-            </div>
           </div>
         </div>
 
@@ -176,6 +166,16 @@ export default function HomePage() {
                 />
               </ButtonSecondary>
             </a>
+          </div>
+          {/* How to join */}
+          <div id="howToJoin" className={classNames(spages["hero-box"], spages["accent"])} style={{marginTop : "10px"}}>
+            <h2>Kako sudjelovati?</h2>
+            <div style={{ fontWeight: "bold" }}>
+              <p>1. Odluči da želiš :)</p>
+              <p>
+                2. Pošalji mail na <a href="mailto:info@fiking.hr">info@fiking.hr</a> i pridruži se na Discord server udruge!
+              </p>
+            </div>
           </div>
         </div>
       </div>

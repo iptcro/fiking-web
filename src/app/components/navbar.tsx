@@ -3,7 +3,7 @@ import * as React from "react";
 import styles from "@/app/styles/navbar_styles.module.css";
 import { Button } from "@mui/base/Button";
 import { FikingLogo } from "./logo";
-import { IconMenu2 } from "@tabler/icons-react";
+import { IconMenu2, IconChevronDown } from "@tabler/icons-react";
 import StaticIcon from "./Icon";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -17,14 +17,32 @@ export default function Navbar() {
     setMenuOpen((prev) => !prev);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   const navLinks = (
     <>
       <Link href="/">
         <Button className={styles["nav-bar-item"]}>Fiking</Button>
       </Link>
-      <Link href="/about">
-        <Button className={styles["nav-bar-item"]}>O nama</Button>
-      </Link>
+      <div className={styles["dropdown-wrapper"]}>
+        <Link href="/about" onClick={closeMenu}>
+          <Button className={styles["nav-bar-item"]}>
+            O nama 
+            <IconChevronDown 
+              size={18} 
+              className={styles["chevron"]} 
+              color="black" 
+            />
+          </Button>
+        </Link>
+        <div className={styles["dropdown-content"]}>
+          <Link href="/support" onClick={closeMenu}>
+            <Button className={styles["nav-bar-item"]}>Podrži nas</Button>
+          </Link>
+        </div>
+      </div>
       <Link href="/conference">
         <Button className={styles["nav-bar-item"]}>IPT Conference</Button>
       </Link>

@@ -4,6 +4,7 @@ import Navbar from "@/app/components/navbar";
 import Footer from "../app/components/footer";
 import classNames from "classnames";
 import { IconTargetArrow } from "@tabler/icons-react";
+import { ButtonPrimary } from "@/app/components/buttons";
 import "@/app/styles/globals.css";
 import Gallery from "@/app/components/gallery";
 
@@ -92,6 +93,9 @@ export default function AboutPage() {
               financijsku potporu za odlazak na IPT. Uz to, radimo na promociji
               znanosti u Hrvatskoj te povezivanju fakulteta i privatnih tvrtki.
             </p>
+            <div className={spages["btn-holder"]}>
+              <a href="/support"><ButtonPrimary>Podrži nas!</ButtonPrimary></a>
+            </div>
           </div>
         </div>
       </div>
