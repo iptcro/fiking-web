@@ -1,7 +1,6 @@
-TO DO:
-- responzivnost??
-- trakica na  kojoj pise da je web jos u dev fazi
-- header - mozda tipa Fiking | IPT Croatia
+CONTENT
+- dodati slike s IPT konferencije
+- dodati slike s integrijade
 
 FIXEVI
 - gumbi s ikonicama, općenito trebaju li nam 2 komponente za gumbe?
@@ -9,11 +8,7 @@ FIXEVI
 - još uvijek svi gumbi ne rade ono što želimo
 - veličine fontova možda u neke varijable ??
 
-klase za display flex i display grid pa da imas opcenite
-header i links stvari
 router koji vodi na druge pageove
-404 page za ove stvari koje su under construction >.<
-
 
 Mobilna verzija
 - drugaciji main menu?
