@@ -1,6 +1,7 @@
 CONTENT
 - dodati slike s IPT konferencije
 - dodati slike s integrijade
+- Šahovski turnir
 
 FIXEVI
 - gumbi s ikonicama, općenito trebaju li nam 2 komponente za gumbe?

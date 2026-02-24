@@ -22,6 +22,13 @@ export const homeKeyInfo = [
   { id: 4, icon: "IconTestPipe", title: "STEM" },
 ];
 
+const sponsors = [
+  { name: "Sponsor 1", logo: "/media/sponsors/dedal.svg", url: "https://dedal.hr/" },
+  { name: "Sponsor 2", logo: "/media/sponsors/scan.jpg", url: "https://www.scan.si/" },
+  { name: "Sponsor 3", logo: "/media/sponsors/telemax.jpg", url: "https://www.telemax.hr/" },
+  { name: "Sponsor 4", logo: "/media/sponsors/ansar_analitika.png", url: "https://ansar-analitika.hr/hr/" },
+];
+
 export default function HomePage() {
   return (
     <div className={spages["page"]}>
@@ -37,7 +44,7 @@ export default function HomePage() {
           </h1>
           <div className={spages["description"]}>
             <p>
-              IPT je međunarodno studentsko natjecanje u kojem timovi rješavaju otvorene probleme u fizici. Nakon nekoliko mjeseci rada, sudionici predstavljaju svoja rješenja i sudjeluju u znanstevnim raspravama tijekom petodnevnog turnira.
+              <strong>International Physicists&apos; Tournament</strong> (IPT) je međunarodno studentsko natjecanje u kojem timovi rješavaju otvorene probleme u fizici. Nakon nekoliko mjeseci rada, sudionici predstavljaju svoja rješenja i sudjeluju u znanstevnim raspravama tijekom petodnevnog turnira.
             </p>
           </div>
           <div className={spages["btn-holder"]}>
@@ -176,6 +183,47 @@ export default function HomePage() {
               <p>
                 2. Pošalji mail na <a href="mailto:info@fiking.hr">info@fiking.hr</a> i pridruži se na Discord server udruge!
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={classNames(spages["hero"], spages["color"], spages["divider"])}></div>
+
+      <div className={classNames(spages["hero"])}>
+        <h2>IPT 2026</h2>
+        <div className={classNames(spages["columns"])}>
+          <div className={spages["align-center"]}>
+            <img
+              src="media/gallery/work_weekend_2026.png"
+              alt="work-weekend"
+              style={{
+                width: "100%",
+                borderRadius: "18px",
+                padding: "0",
+              }}
+            />
+          </div>
+          <div className={spages["align-center"]}>
+            <p>
+              Ovogodišnji IPT održava se u SAD-u, na Oklahoma State University, od 26. do 30. svibnja.
+              Za hrvatske natjecatelje i članove udruge Fiking, pripreme su u punom jeku, s ciljem nadmašiti prošlogodišnji rezultat i ponosno predstaviti naš tim na međunarodnoj sceni.
+            </p>
+            <p>
+              Rad naših natjecatelja i udruge Fiking ne bi bio moguć bez podrške naših sponzora, kojima ovim putem zahvaljujemo na njihovim donacijama.
+            </p>
+            <div className={spages["sponsorGrid"]}>
+              {sponsors.map((sponsor) => (
+                <a
+                  key={sponsor.name}
+                  href={sponsor.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={spages["sponsorItem"]}
+                >
+                  <img src={sponsor.logo} alt={sponsor.name} />
+                </a>
+              ))}
             </div>
           </div>
         </div>

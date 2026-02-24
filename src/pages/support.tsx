@@ -58,8 +58,8 @@ export default function SupportPage() {
                 Želite li da vaša tvrtka sponzorira Integrijadu ili IPT konferenciju? 
                 Javite nam se za dogovor o suradnji i promociji vašeg brenda unutar naše zajednice.
                 </p>
-                <a href="mailto:info@fiking.hr" style={{ color: 'var(--fiking-dark)', fontWeight: 'bold' }}>
-                Pošalji upit →          {/* Barkod / QR slika */}
+                <a href="mailto:info@fiking.hr" style={{ color: 'var(--fiking-dark)' }}>
+                  Pošalji upit:<strong>info@fiking.hr</strong>
                 </a>
             </div>
             </div>
