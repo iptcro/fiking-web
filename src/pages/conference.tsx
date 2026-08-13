@@ -106,7 +106,7 @@ export default function ConferencePage() {
             </div>
 
             <section className={spages["hero"]}>
-                <h1>Conference presentations 2024.</h1>
+                <h1>Conference presentations 2025.</h1>
                 <div className={classNames(spages["programme-list"])}>
                     {talks.map((talk, index) => {
                         return (

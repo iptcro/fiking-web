@@ -27,6 +27,7 @@ const sponsors = [
   { name: "Sponsor 2", logo: "/media/sponsors/scan.jpg", url: "https://www.scan.si/" },
   { name: "Sponsor 3", logo: "/media/sponsors/telemax.jpg", url: "https://www.telemax.hr/" },
   { name: "Sponsor 4", logo: "/media/sponsors/ansar_analitika.png", url: "https://ansar-analitika.hr/hr/" },
+  { name: "Sponsor 5", logo: "/media/sponsors/sc_logo.png", url: "https://www.sczg.unizg.hr/" }
 ];
 
 export default function HomePage() {
@@ -206,11 +207,11 @@ export default function HomePage() {
           </div>
           <div className={spages["align-center"]}>
             <p>
-              Ovogodišnji IPT održava se u SAD-u, na Oklahoma State University, od 26. do 30. svibnja.
-              Za hrvatske natjecatelje i članove udruge Fiking, pripreme su u punom jeku, s ciljem nadmašiti prošlogodišnji rezultat i ponosno predstaviti naš tim na međunarodnoj sceni.
+              Hrvatski tim na IPT-u 2026., održanom na Oklahoma State University, plasirao se na <b>6. mjesto</b> - naš najbolji uspjeh do sada.
+              Plasiravši se u polufinale drugu godinu zaredom, hrvatski tim pokazao je da mu je mjesto među najboljim mladim fizičarima svijeta. 
             </p>
             <p>
-              Rad naših natjecatelja i udruge Fiking ne bi bio moguć bez podrške naših sponzora, kojima ovim putem zahvaljujemo na njihovim donacijama.
+              Rad naših natjecatelja i udruge Fiking ne bi bio moguć bez podrške naših sponzora, kojima ovim putem zahvaljujemo.
             </p>
             <div className={spages["sponsorGrid"]}>
               {sponsors.map((sponsor) => (
@@ -237,13 +238,11 @@ export default function HomePage() {
 
           <div className={spages["align-center"]}>
             <p>
-              Naš tim je ove godine ostvario povijesni uspjeh — prvi put smo se plasirali u polufinale Međunarodnog turnira fizičara (IPT)! Turnir se održao u Poljskoj i okupio timove s više od 25 sveučilišta iz cijelog svijeta. Odabrano je 18 zemalja koje su se natjecale, a mi smo među njima zauzeli 9. mjesto.
+              Naš tim 2025. godine ostvario je povijesni uspjeh — prvi put smo se plasirali u polufinale Međunarodnog turnira fizičara (IPT)! 
+              Turnir se održao u Poljskoj i okupio timove s više od 25 sveučilišta iz cijelog svijeta. Odabrano je 18 zemalja koje su se natjecale, a mi smo među njima zauzeli 9. mjesto.
             </p>
             <p>
               Odlazak na turnir u Poljsku bio je moguć zahvaljujući podršci fakulteta, nekoliko lokalnih tvrtki te velikom broju prijatelja, obitelji i podupiratelja koji su donirali putem crowdfundinga – od srca hvala svima!
-            </p>
-            <p>
-              Pripreme za IPT 2026 već su počele — ako želiš biti dio ekipe i iskusiti znanost iz prve ruke, javi nam se!
             </p>
             <div style={{ textAlign: "center" }}>
               <img
