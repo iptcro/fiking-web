@@ -12,6 +12,7 @@ import classNames from "classnames";
 export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const isConference = pathname === "/conference";
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -62,7 +63,11 @@ export default function Navbar() {
   );
 
   return (
-    <div className={styles["top-bar"]}>
+    <div
+      className={classNames(styles["top-bar"], {
+        [styles["theme-ipt"]]: isConference,
+      })}
+    >
       <div className={styles["nav-bar"]}>
         {!menuOpen && (
           <Link href="/">

@@ -128,6 +128,46 @@
   .dropdown-content .nav-bar-item {
     text-align: left;
     padding: 0.5rem 1rem;
-    font-size: 1rem; 
+    font-size: 1rem;
   }
+}
+
+/* IPT Conference poster theme: bold black text on the page's cream bg, orange accent */
+.theme-ipt .nav-bar {
+  background-color: transparent;
+}
+
+.theme-ipt .mobile-dropdown {
+  background-color: #FFFBF7;
+}
+
+.theme-ipt .dropdown-content {
+  background-color: #FFFBF7;
+}
+
+.theme-ipt .nav-bar-item {
+  color: #141414;
+}
+
+.theme-ipt .nav-bar-item:hover {
+  color: #F0742A;
+}
+
+.theme-ipt .chevron {
+  stroke: #141414;
+}
+
+.theme-ipt .nav-bar-item.accent {
+  border-color: #141414;
+  background-color: #F0742A;
+  color: #141414;
+}
+
+.theme-ipt .nav-bar-item.accent:hover {
+  background-color: #141414;
+  color: #F0742A;
+}
+
+.theme-ipt .nav-menu-button {
+  background-color: #F0742A;
 }

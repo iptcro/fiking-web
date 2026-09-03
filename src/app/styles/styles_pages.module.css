@@ -148,13 +148,192 @@
   height: 13rem;
 }
 
-/* Conference page */
-.conference-page span {
-  color: var(--fiking-dark);
+/* Conference page: poster theme (cream bg, bold black type, orange accent) */
+.conference-page {
+  --ipt-orange: #F0742A;
+  --ipt-black: #141414;
+  --ipt-cream: #FFFBF7;
+  background-color: var(--ipt-cream);
 }
 
-.conference-page .btn-primary {
-  background-color: var(--fiking-secondary);
+.conference-page h1,
+.conference-page h2,
+.conference-page h3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--ipt-black);
+  text-transform: uppercase;
+}
+
+.conference-page h1 {
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  font-size: 3rem;
+  line-height: 1.02;
+  text-shadow: 3px 3px 0 rgba(240, 116, 42, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .conference-page h1 {
+    font-size: 4.2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .conference-page h1 {
+    font-size: 5.2rem;
+  }
+}
+
+.conference-page p,
+.conference-page a {
+  color: var(--ipt-black);
+}
+
+.conference-page span {
+  color: var(--ipt-orange);
+  text-shadow:
+    -1px -1px 0 var(--ipt-cream),
+    1px -1px 0 var(--ipt-cream),
+    -1px 1px 0 var(--ipt-cream),
+    1px 1px 0 var(--ipt-cream);
+}
+
+.ipt-top {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--ipt-cream);
+  isolation: isolate;
+}
+
+.conference-page .hero {
+  position: relative;
+}
+
+.conference-page .hero.color {
+  background-color: rgba(240, 116, 42, 0.22);
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.conference-page .color h1,
+.conference-page .color h2,
+.conference-page .color h3,
+.conference-page .color p,
+.conference-page .color a {
+  color: var(--ipt-black);
+}
+
+.conference-page :global(.btn-primary) {
+  background-color: var(--ipt-orange);
+  color: var(--ipt-black);
+  border-color: var(--ipt-black);
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0.4rem 1rem;
+  font-size: 1.3rem;
+}
+
+.conference-page :global(.btn-primary):hover {
+  background-color: var(--ipt-black);
+  color: var(--ipt-orange);
+  border-color: var(--ipt-black);
+}
+
+.date-badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--perfect-white);
+  background-color: var(--ipt-black);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  position: relative;
+  z-index: 1;
+}
+
+.date-badge span {
+  color: var(--ipt-orange);
+  text-shadow: none;
+}
+
+.free-entry {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.registrations-soon {
+  width: fit-content;
+  margin-top: 1.5rem;
+  cursor: default;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.wavy-decoration {
+  position: absolute;
+  top: -12%;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  z-index: -1;
+  opacity: 0.4;
+  pointer-events: none;
+  padding: 0;
+  mask-image: linear-gradient(to bottom, black 56%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-image: linear-gradient(to bottom, black 56%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-composite: source-in;
+}
+
+.halftone-decoration {
+  position: absolute;
+  bottom: -5%;
+  right: -5%;
+  width: 220px;
+  height: 220px;
+  z-index: 0;
+  pointer-events: none;
+  padding: 0;
+  opacity: 0.85;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gallery-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid var(--ipt-black);
+  padding: 0;
+}
+
+.gallery-caption {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ipt-black);
+  text-align: center;
 }
 
 .schedule-table {
@@ -237,6 +416,10 @@
   .columns {
     grid-template-columns: 49% 49%;
     column-gap: 2%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .description, .irb-message {

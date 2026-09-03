@@ -38,6 +38,49 @@
         display: none;
     }
   }
+
+/* Boxed variant: visually distinct cards for each item */
+.key-info-list.boxed {
+    gap: 1rem;
+}
+
+.key-info-box.boxed {
+    background-color: rgba(240, 116, 42, 0.45);
+    border: 2px solid var(--ipt-black, #141414);
+    border-radius: 12px;
+    box-shadow: 3px 3px 0 var(--ipt-black, #141414);
+    padding: 0.65rem 0.8rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.35rem;
+}
+
+.key-info-box.boxed h2 {
+    padding-left: 0;
+    font-size: 0.9rem;
+}
+
+.carousel-item.boxed {
+    background-color: rgba(240, 116, 42, 0.45);
+    border: 2px solid var(--ipt-black, #141414);
+    border-radius: 12px;
+    box-shadow: 3px 3px 0 var(--ipt-black, #141414);
+    padding: 0.65rem 0.8rem;
+    text-align: center;
+}
+
+.carousel-item.boxed h2 {
+    font-size: 0.9rem;
+}
+
+.key-info-box h2 a,
+.carousel-item h2 a {
+    color: var(--ipt-orange, #F0742A);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
   
 
 

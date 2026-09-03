@@ -83,6 +83,21 @@
   border-radius: 100%;
 }
 
+/* IPT Conference poster theme */
+.footer.conference-theme {
+  background-color: #F0742A;
+}
+
+.footer.conference-theme h2,
+.footer.conference-theme p {
+  color: var(--perfect-white);
+  text-transform: none;
+}
+
+.footer.conference-theme .social-icon-button {
+  background-color: #141414;
+}
+
 /* ICONS */
 
 .icon-holder-btn {

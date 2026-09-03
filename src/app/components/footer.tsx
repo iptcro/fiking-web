@@ -1,14 +1,20 @@
+"use client";
 import { IconBrandInstagram, IconMail } from "@tabler/icons-react";
 import { IconLink } from "./buttons";
 import { FikingLogoWhite } from "./logo";
+import { usePathname } from "next/navigation";
+import classNames from "classnames";
 import "@/app/styles/styles_comp.css";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const isConference = pathname === "/conference";
+
   return (
-    <div className="footer color">
+    <div className={classNames("footer", "color", { "conference-theme": isConference })}>
       <div className="footer-info">
         <a>
-          <FikingLogoWhite width={50}/>
+          <FikingLogoWhite width={50} />
         </a>
         <div>
           <h2 className="color">Studentska udruga Fiking</h2>

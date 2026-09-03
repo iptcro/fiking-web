@@ -41,6 +41,7 @@ interface IconButtonProps {
   url?: string;
   iconSize?: number;
   iconClassName?: string;
+  color?: string;
 }
 
 // export const IconButton: React.FC<IconButtonProps> = ({
@@ -60,6 +61,7 @@ export const IconLink: React.FC<IconButtonProps> = ({
   url = "",
   iconSize = 32,
   iconClassName = "social-icon-button",
+  color,
 }) => {
   return (
     <a
@@ -68,7 +70,7 @@ export const IconLink: React.FC<IconButtonProps> = ({
       target="_blank"
       rel="noopener noreferrer"
     >
-      <StaticIcon icon={Icon} size={iconSize} className={iconClassName} />
+      <StaticIcon icon={Icon} size={iconSize} className={iconClassName} color={color} />
     </a>
   );
 };
