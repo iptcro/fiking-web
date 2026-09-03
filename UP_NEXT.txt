@@ -1,6 +1,4 @@
 CONTENT
-- dodati slike s IPT konferencije
-- dodati slike s integrijade
 - Šahovski turnir
 
 FIXEVI
