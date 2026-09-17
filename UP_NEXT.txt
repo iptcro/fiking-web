@@ -1,5 +1,6 @@
 CONTENT
 - Šahovski turnir
+- Malo bolje slike s konf
 
 FIXEVI
 - gumbi s ikonicama, općenito trebaju li nam 2 komponente za gumbe?
