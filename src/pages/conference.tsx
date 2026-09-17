@@ -5,7 +5,7 @@ import Footer from "../app/components/footer";
 import classNames from "classnames";
 import "@/app/styles/globals.css";
 import KeyInfo from "@/app/components/key_info";
-// import { ButtonPrimary } from "@/app/components/buttons"; // re-add once the register button is back
+import { ButtonPrimary } from "@/app/components/buttons";
 
 export const conferenceKeyInfo = [
     { id: 1, icon: "IconCalendarMonth", title: "6–7 October 2026" },
@@ -62,13 +62,7 @@ export default function ConferencePage() {
                                 <p>
                                     Alongside keynote talks from guest physicists, students present the problems they solved best at the tournament, with participants from various countries. It&apos;s a chance for them to gain early experience presenting their work to peers and colleagues.
                                 </p>
-                                <p className={classNames("btn", "btn-primary", spages["registrations-soon"])}>
-                                    Registrations open soon.
-                                </p>
-                                {/* Registration isn't open yet — re-enable once the form link is ready
-                                (also re-add the ButtonPrimary import above)
-                                <a href="#"><ButtonPrimary>REGISTER NOW!</ButtonPrimary></a>
-                                */}
+                                <a href="https://indico.global/event/19055/overview" target="_blank" rel="noopener noreferrer"><ButtonPrimary>REGISTER NOW!</ButtonPrimary></a>
                             </div>
                             <div className={spages["align-center"]} style={{ alignItems: "center" }}>
                                 <img
