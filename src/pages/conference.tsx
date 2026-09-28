@@ -129,6 +129,16 @@ export default function ConferencePage() {
                                     Alongside keynote talks from guest physicists, students present the problems they solved best at the tournament, with participants from various countries. It&apos;s a chance for them to gain early experience presenting their work to peers and colleagues.
                                 </p>
                                 <a href="https://indico.global/event/19055/overview" target="_blank" rel="noopener noreferrer"><ButtonPrimary>REGISTER NOW!</ButtonPrimary></a>
+
+                                <div className={spages["support-block"]}>
+                                    <p className={spages["support-text"]}>
+                                        This conference is organized with support from Institute of Physics and Ruđer Bošković Institute.
+                                    </p>
+                                    <div className={spages["support-logos"]}>
+                                        <img src="/media/logo/ifs_logo.png" alt="Institute of Physics" />
+                                        <img src="/media/logo/irb_logo.png" alt="Ruđer Bošković Institute" />
+                                    </div>
+                                </div>
                             </div>
                             <div className={spages["align-center"]} style={{ alignItems: "center" }}>
                                 <img
