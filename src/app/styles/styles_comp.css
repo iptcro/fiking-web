@@ -134,6 +134,78 @@
   text-align: justify;
 }
 
+/* Abstracts */
+
+.abstracts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.abstract-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: rgba(240, 116, 42, 0.06);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.abstract-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.abstract-thumb {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid var(--ipt-black, var(--fiking-dark));
+  padding: 0;
+}
+
+.abstract-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.abstract-title {
+  margin: 0;
+  color: var(--ipt-black, black);
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.abstract-heading .abstract-presenter {
+  margin: 0;
+  color: var(--ipt-orange, var(--fiking-light));
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.abstract-body {
+  padding: 0;
+  margin-top: auto;
+}
+
+.abstract-body p {
+  font-size: 0.95rem;
+  text-align: justify;
+  color: var(--ipt-black, black);
+  margin: 0 0 0.75rem;
+}
+
+.abstract-body p:last-child {
+  margin-bottom: 0;
+}
+
 /* Zmall desktop / Tablet*/
 @media only screen and (min-width: 768px) {
   .footer {
