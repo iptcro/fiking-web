@@ -7,12 +7,28 @@ import "@/app/styles/globals.css";
 import KeyInfo from "@/app/components/key_info";
 import { ButtonPrimary } from "@/app/components/buttons";
 import Abstracts, { Abstract } from "@/app/components/abstracts";
+import Timetable, { TimetableDay } from "@/app/components/timetable";
 
 export const conferenceKeyInfo = [
     { id: 1, icon: "IconCalendarMonth", title: "6–7 October 2026" },
     { id: 2, icon: "IconPinned", title: "Institute of Physics, Zagreb", url: "https://www.google.com/maps/search/?api=1&query=Institut+za+fiziku,+Bijeni%C4%8Dka+cesta+46,+10000+Zagreb" },
     { id: 3, icon: "IconUsers", title: "open to public" },
     { id: 4, icon: "IconHandFingerRight", title: "registration required" },
+];
+
+const keynoteSpeakersData: Abstract[] = [
+    {
+        title: "Ticijana Ban",
+        presenter: "",
+        image: "/media/conference/ticijana_ban.jpg",
+        body: "",
+    },
+    {
+        title: "Filip Novkoski",
+        presenter: "From tabletop physics to open problems",
+        image: "/media/conference/filip_novkoski.jpg",
+        body: "",
+    },
 ];
 
 const abstractsData: Abstract[] = [
@@ -30,17 +46,18 @@ const abstractsData: Abstract[] = [
                Using our discoveries, we can create music!
                We used a variety of experimental setups, including a seesaw-like system for the slap, and a moving platform with our 3D-printed hand approximation mounted upon it for the plow.`,
     },
-    // {
-    //     title: "Beer Foam",
-    //     presenter: "Borna Stjepić (CRO)",
-    //     image: "/media/conference/placeholder.svg",
-    //     body: `Foams represent complex soft-state systems which embody many interesting diffusion, breakage and coalescence phenomena. 
-    //            In our work, we have studied the properties of wet and dry foams in everyday beverages such as fizzy drinks and beer. 
+    {
+        title: "Beer Foam",
+        presenter: "Bruno Novosel (CRO)",
+        image: "/media/conference/beer.webp",
+        body: `Foams represent complex soft-state systems which embody many interesting diffusion, breakage and coalescence phenomena. 
+               In our work, we have studied the properties of wet and dry foams in everyday beverages such as fizzy drinks and beer. 
                
-    //            We theoretically modelled bubble evolution with numerical models combining continuous bubble growth with stochastic bubble breakage. 
-    //            Using our theoretical model, we were able to predict the functional dependence of the foam height on time, which we confirmed using a repeatable experimental setup. 
-    //            The results show an exponential decay for dry foam systems, such as fizzy drink foam, and a power-law decay for wet foams, as in the case of beer foams.`,
-    // },
+               We theoretically modelled bubble evolution with numerical models combining continuous bubble growth with stochastic bubble breakage. 
+
+               Using our theoretical model, we were able to predict the functional dependence of the foam height on time, which we confirmed using a repeatable experimental setup. 
+               The results show an exponential decay for dry foam systems, such as fizzy drink foam, and a power-law decay for wet foams, as in the case of beer foams.`,
+    },
     {
         title: "Automated method for analysis of biomechanics of figure skating jumps",
         presenter: "Ema Vuković (CRO)",
@@ -77,6 +94,62 @@ const abstractsData: Abstract[] = [
                from the perspective of signal transmission with focus on wave dampening in the string and the transition from string to cup. 
                
                The goal is to not only maximize the range, but also to modify the telephone to have a group call.`,
+    },
+    {
+        title: "Water “Laser”",
+        presenter: "Eszter Gábriel (HUN)",
+        image: "/media/conference/water_laser.jpeg",
+        body: `A shallow water tank mechanically excited by a motor features some of the basic ingredients of a laser (i.e., a cavity and an amplifier). 
+               To what extent can this simple analogy capture more complex aspects of laser physics? 
+
+               The presentation will demonstrate how to create a resonant cavity in a water tank, discuss its limitations, 
+               and explore other fascinating analogies between water waves and advanced phenomena in optics and laser physics.`,
+    },
+    {
+        title: "String telephone: Much more than just a simple toy!",
+        presenter: "Petar Lalović (GER)",
+        image: "/media/conference/string_telephone_ger.jpeg",
+        body: `You have probably made and played with string telephones during childhood without giving it that much thought. 
+               Taking a closer look into these simple devices reveals interesting physics and important parameters regarding the phone's structure and setup. 
+               This talk will show how altering certain parameters influences the string phone's performance, pushing it to its limits!`,
+    },
+    {
+        title: "Maxwell's Demon",
+        presenter: "Felix Barth (GER)",
+        image: "/media/conference/string_telephone_ger.jpeg",
+        body: `The Maxwell's Demon appears to violate the second law of thermodynamics which would have drastic implications.
+               Using the Szilard's engine as an example we discover its difficulties and beauties.`,
+    },
+];
+
+const timetableData: TimetableDay[] = [
+    {
+        label: "Tuesday",
+        date: "6 October",
+        items: [
+            { time: "13:30", title: "Doors open" },
+            { time: "14:00", title: "Welcome", speaker: "Maja Milas, Grigor Stojaković" },
+            { time: "14:10", title: "Student's guide to the Institute of Physics", speaker: "Iva Šrut Rakić" },
+            { time: "14:25", title: "Singing Water", speaker: "Gabrijel Janđel" },
+            { time: "14:45", title: "Maxwell's Demon", speaker: "Felix Barth" },
+            { time: "15:05", title: "Water “Laser”", speaker: "Eszter Gábriel" },
+            { time: "15:25", title: "Coffee break" },
+            { time: "16:00", title: "From tabletop physics to open problems", speaker: "Filip Novkoski" },
+            { time: "16:25", title: "Beer Foam", speaker: "Bruno Novosel" },
+            { time: "16:45", title: "Can You Hear Me Now? Acoustic Transmission in a String Telephone", speaker: "Niklas Schrimpf" },
+            { time: "17:05", title: "Automated method for analysis of biomechanics of figure skating jumps", speaker: "Ema Vuković" },
+        ],
+    },
+    {
+        label: "Wednesday",
+        date: "7 October",
+        items: [
+            { time: "14:05", title: "Invent Yourself: Ping-Pong Balls Cannon", speaker: "Filip Landek" },
+            { time: "14:25", title: "String telephone: Much more than just a simple toy!", speaker: "Petar Lalović" },
+            { time: "14:45", title: "Keynote talk", speaker: "Ticijana Ban" },
+            { time: "15:10", title: "Closing", speaker: "Grigor Stojaković, Dorijan Vulić" },
+            { time: "15:30", title: "Networking and snacks" },
+        ],
     },
 ];
 
@@ -187,6 +260,16 @@ export default function ConferencePage() {
             <div className={classNames(spages["hero"], spages["color"])}>
                 <KeyInfo keyInfo={conferenceKeyInfo} iconColor="#141414" boxed />
             </div>
+
+            <section className={spages["hero"]}>
+                <h1>Timetable</h1>
+                <Timetable data={timetableData} />
+            </section>
+
+            <section className={spages["hero"]}>
+                <h1>Keynote Speakers</h1>
+                <Abstracts data={keynoteSpeakersData} />
+            </section>
 
             <section className={spages["hero"]}>
                 <h1>Abstracts</h1>
