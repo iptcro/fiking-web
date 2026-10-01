@@ -116,7 +116,7 @@ const abstractsData: Abstract[] = [
     {
         title: "Maxwell's Demon",
         presenter: "Felix Barth (GER)",
-        image: "/media/conference/string_telephone_ger.jpeg",
+        image: "/media/conference/maxwells_demon.png",
         body: `The Maxwell's Demon appears to violate the second law of thermodynamics which would have drastic implications.
                Using the Szilard's engine as an example we discover its difficulties and beauties.`,
     },
