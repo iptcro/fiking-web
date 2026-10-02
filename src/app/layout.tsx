@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" type="image/x-icon" href="/media/logo/FikingLogo.svg" />
+        <link rel="icon" type="image/svg+xml" href="/media/logo/FikingLogo.svg" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
