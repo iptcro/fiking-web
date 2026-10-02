@@ -107,7 +107,7 @@ const abstractsData: Abstract[] = [
     },
     {
         title: "String telephone: Much more than just a simple toy!",
-        presenter: "Petar Lalović (GER)",
+        presenter: "Petar Lolović (GER)",
         image: "/media/conference/string_telephone_ger.jpeg",
         body: `You have probably made and played with string telephones during childhood without giving it that much thought. 
                Taking a closer look into these simple devices reveals interesting physics and important parameters regarding the phone's structure and setup. 
@@ -145,7 +145,7 @@ const timetableData: TimetableDay[] = [
         date: "7 October",
         items: [
             { time: "14:05", title: "Invent Yourself: Ping-Pong Balls Cannon", speaker: "Filip Landek" },
-            { time: "14:25", title: "String telephone: Much more than just a simple toy!", speaker: "Petar Lalović" },
+            { time: "14:25", title: "String telephone: Much more than just a simple toy!", speaker: "Petar Lolović" },
             { time: "14:45", title: "Keynote talk", speaker: "Ticijana Ban" },
             { time: "15:10", title: "Closing", speaker: "Grigor Stojaković, Dorijan Vulić" },
             { time: "15:30", title: "Networking and snacks" },
