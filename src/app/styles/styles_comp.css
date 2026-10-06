@@ -289,6 +289,30 @@
   font-size: 0.85rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .abstracts-grid,
+  .timetable-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abstract-header {
+    gap: 1rem;
+  }
+
+  .abstract-thumb {
+    width: 100px;
+    height: 100px;
+  }
+
+  .abstract-title {
+    font-size: 1.4rem;
+  }
+
+  .abstract-heading .abstract-presenter {
+    font-size: 1.1rem;
+  }
+}
+
 /* Zmall desktop / Tablet*/
 @media only screen and (min-width: 768px) {
   .footer {

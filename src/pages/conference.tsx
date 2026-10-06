@@ -18,16 +18,30 @@ export const conferenceKeyInfo = [
 
 const keynoteSpeakersData: Abstract[] = [
     {
-        title: "Ticijana Ban",
-        presenter: "",
-        image: "/media/conference/ticijana_ban.jpg",
-        body: "",
+        title: "dr. sc. Neven Šantić",
+        presenter: "Playing with Atoms and Lasers: Our Journey into Quantum Technologies",
+        image: "/media/conference/neven_santic.jpg",
+        body: `The understanding and application of quantum mechanics have already given us many technologies that we use every day, from transistors and LEDs to lasers and GPS. 
+               Today, we are entering a new quantum revolution, with the promise of quantum computers, secure quantum communication, ultra-sensitive quantum sensors, and extremely precise optical atomic clocks.
+
+               In this lecture, I will explore what quantum technologies are and how our research group has joined the global race to develop them. 
+               I will take you on a short tour of the experiments we are doing in our Quantum Technologies group, focusing on three areas: quantum simulators, quantum sensors, and quantum memories. 
+               For our quantum simulators, we use cold rubidium atoms trapped inside a high-finesse optical cavity. Our quantum sensor is an optical atomic clock based on cold strontium atoms, while for quantum memories we work with warm rubidium vapour.
+
+               I will give you a taste of what experimental quantum physics looks like in our laboratory, where lasers are used to create, control, and manipulate quantum systems.
+
+               And if you want to see what all of this really looks like, you will have to come and visit us at the CALT Department of the Institute of Physics in Zagreb!`,
     },
     {
-        title: "Filip Novkoski",
+        title: "dr. sc. Filip Novkoski",
         presenter: "From tabletop physics to open problems",
         image: "/media/conference/filip_novkoski.jpg",
-        body: "",
+        body: `In this talk I want to convey how quickly we reach open problems with no ready answers, using only a few simple ingredients on the scale of a tabletop (or a couple of them). 
+               Drawing on examples from complex systems, fluid dynamics and nonlinear physics, I will describe an approach to physics on the human scale — one that combines experiment and model building, and remains visual and driven by intuition. 
+               
+               I will argue that we don't need to go far to find hard problems, discuss how to recognise them, and show that they readily lead to high quality research. 
+               
+               IPT problems often resemble real research questions in just this way, and with the right approach the skills and experience gained from the tournament can bring you quickly into active research.`,
     },
 ];
 
@@ -263,6 +277,10 @@ export default function ConferencePage() {
 
             <section className={spages["hero"]}>
                 <h1>Timetable</h1>
+                <p>The conference is ongoing! Join us online via Zoom.</p>
+                <a href="https://fau.zoom-x.de/j/65789896397" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", marginBottom: "1.5rem" }}>
+                    <ButtonPrimary>JOIN ONLINE!</ButtonPrimary>
+                </a>
                 <Timetable data={timetableData} />
             </section>
 
