@@ -148,7 +148,7 @@ const timetableData: TimetableDay[] = [
             { time: "14:45", title: "Maxwell's Demon", speaker: "Felix Barth" },
             { time: "15:05", title: "Water “Laser”", speaker: "Eszter Gábriel" },
             { time: "15:25", title: "Coffee break" },
-            { time: "16:00", title: "From tabletop physics to open problems", speaker: "Filip Novkoski" },
+            { time: "16:00", title: "From tabletop physics to open problems", speaker: "dr.sc. Filip Novkoski" },
             { time: "16:25", title: "Beer Foam", speaker: "Bruno Novosel" },
             { time: "16:45", title: "Can You Hear Me Now? Acoustic Transmission in a String Telephone", speaker: "Niklas Schrimpf" },
             { time: "17:05", title: "Automated method for analysis of biomechanics of figure skating jumps", speaker: "Ema Vuković" },
@@ -160,7 +160,7 @@ const timetableData: TimetableDay[] = [
         items: [
             { time: "14:05", title: "Invent Yourself: Ping-Pong Balls Cannon", speaker: "Filip Landek" },
             { time: "14:25", title: "String telephone: Much more than just a simple toy!", speaker: "Petar Lolović" },
-            { time: "14:45", title: "Keynote talk", speaker: "Ticijana Ban" },
+            { time: "14:45", title: "Keynote talk", speaker: "dr.sc. Neven Šantić" },
             { time: "15:10", title: "Closing", speaker: "Grigor Stojaković, Dorijan Vulić" },
             { time: "15:30", title: "Networking and snacks" },
         ],
