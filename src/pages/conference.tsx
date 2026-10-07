@@ -160,7 +160,7 @@ const timetableData: TimetableDay[] = [
         items: [
             { time: "14:05", title: "Invent Yourself: Ping-Pong Balls Cannon", speaker: "Filip Landek" },
             { time: "14:25", title: "String telephone: Much more than just a simple toy!", speaker: "Petar Lolović" },
-            { time: "14:45", title: "Keynote talk", speaker: "dr.sc. Neven Šantić" },
+            { time: "14:45", title: "Playing with Atoms and Lasers: Our Journey into Quantum Technologies", speaker: "dr.sc. Neven Šantić" },
             { time: "15:10", title: "Closing", speaker: "Grigor Stojaković, Dorijan Vulić" },
             { time: "15:30", title: "Networking and snacks" },
         ],
